@@ -1,0 +1,42 @@
+[
+  {
+    "icon": "ri-group-line",
+    "title": "Réseautage Industriel & Institutionnel",
+    "description": "Connectez-vous avec industriels, décideurs publics, investisseurs et institutions clés."
+  },
+  {
+    "icon": "ri-megaphone-line",
+    "title": "Visibilité & Image de Marque",
+    "description": "Valorisez votre marque auprès des acteurs industriels, économiques et médiatiques."
+  },
+  {
+    "icon": "ri-shake-hands-line",
+    "title": "Opportunités de Partenariats",
+    "description": "Développez des collaborations stratégiques et des projets industriels communs."
+  },
+  {
+    "icon": "ri-star-line",
+    "title": "Accès Premium & Leadership",
+    "description": "Renforcez votre leadership grâce à une visibilité et des prises de parole ciblées."
+  },
+  {
+    "icon": "ri-lightbulb-line",
+    "title": "Innovation & Industrie 4.0",
+    "description": "Explorez les innovations, la digitalisation et les technologies industrielles avancées."
+  },
+  {
+    "icon": "ri-presentation-line",
+    "title": "Conférences & Ateliers Experts",
+    "description": "Participez à des conférences animées par des experts nationaux et internationaux."
+  },
+  {
+    "icon": "ri-user-search-line",
+    "title": "Talents & Compétences Industrielles",
+    "description": "Rencontrez des talents qualifiés et échangez sur les compétences industrielles."
+  },
+  {
+    "icon": "ri-bar-chart-line",
+    "title": "Projets Industriels & Politiques Publiques",
+    "description": "Découvrez les projets structurants et les politiques publiques industrielles."
+  }
+]

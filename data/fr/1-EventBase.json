@@ -1,0 +1,18 @@
+{
+  "EventDate": "2026-05-06 08:30:00",
+  "EventName": "INDUSTRY MEETING DAYS ",
+  "EventShortName": "IMD",
+  "EventSubject": "LE MAROC",
+  "EventTopic": "CARREFOUR DES INDUSTRIES MONDIALES",
+  "EventDescription": "Le rendez-vous B2B incontournable dédié à l’industrie, à l’investissement \n et aux partenariats stratégiques au Maroc.",
+  "EventLogo": "https://res.cloudinary.com/dzcarbymi/image/upload/v1766141874/LOGO_IDM_qmhmae.png",
+  "EventLogoRatio": "2.94/1",
+  "EventBanner": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767956262/imd-banner_xnfjbo.webp",
+  "EventLocation": "Cathédrale du Sacré-Cœur",
+  "EventCity": "Casablanca",
+  "EventLocationMap": "https://maps.app.goo.gl/QHgvhnAWVfNvFBs9A",
+  "EventAccentColor": "#00BCE3",
+  "EventPrimaryColor": "#0E2544",
+  "EventFavicon": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767776080/favicon_aagneu.ico",
+  "EventEmailImage":"https://res.cloudinary.com/dzcarbymi/image/upload/v1767865121/save_the_date_ovmooi.png"
+}

@@ -1,0 +1,48 @@
+/* Gallery Grid 1 */
+.gallery-grid-card:nth-child(1) {
+  @apply order-1 col-span-6 lg:col-span-4 lg:row-span-3;
+}
+.gallery-grid-card:nth-child(2) {
+  @apply order-2 col-span-3 lg:col-span-2 lg:row-span-3;
+}
+.gallery-grid-card:nth-child(3) {
+  @apply order-3 col-span-3 lg:col-span-2 lg:row-span-3;
+}
+.gallery-grid-card:nth-child(4) {
+  @apply order-5 col-span-3 lg:order-4 lg:col-span-2 lg:row-span-3;
+}
+.gallery-grid-card:nth-child(5) {
+  @apply order-4 col-span-6 lg:order-5 lg:col-span-4 lg:row-span-3;
+}
+.gallery-grid-card:nth-child(6) {
+  @apply order-6 col-span-3 lg:col-span-2 lg:row-span-3;
+}
+.gallery-grid-card:nth-child(7) {
+  @apply order-7 col-span-6 lg:col-span-2 lg:row-span-3;
+}
+.gallery-grid-card:nth-child(8) {
+  @apply order-8 col-span-3 lg:col-span-2 lg:row-span-3;
+}
+.gallery-grid-card:nth-child(9) {
+  @apply order-9 col-span-3 lg:col-span-4 lg:row-span-3;
+}
+
+/*Editions Gallery Grid */
+.gallery-grid-edition-card:nth-child(1) {
+  @apply order-1 col-span-6 lg:col-span-4 lg:row-span-3;
+}
+.gallery-grid-edition-card:nth-child(2) {
+  @apply order-2 col-span-3 lg:col-span-2 lg:row-span-3;
+}
+.gallery-grid-edition-card:nth-child(3) {
+  @apply order-3 col-span-3 lg:col-span-2 lg:row-span-3;
+}
+.gallery-grid-edition-card:nth-child(4) {
+  @apply order-5 col-span-3 lg:order-4 lg:col-span-2 lg:row-span-3;
+}
+.gallery-grid-edition-card:nth-child(5) {
+  @apply order-4 col-span-6 lg:order-5 lg:col-span-2 lg:row-span-3;
+}
+.gallery-grid-edition-card:nth-child(6) {
+  @apply order-6 col-span-3 lg:col-span-4 lg:row-span-3;
+}

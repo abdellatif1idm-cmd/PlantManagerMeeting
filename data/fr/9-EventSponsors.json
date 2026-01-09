@@ -1,0 +1,413 @@
+{
+  "silver": [
+    {
+      "id": 1,
+      "name": "Oncfff",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778354/oncfff_jgwisk.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Maroc Force 1",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778355/maroc-force-1_jmztip.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Ensiit",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778355/ensiit_nnl8xh.jpg"
+    },
+    {
+      "id": 4,
+      "name": "RAM",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778355/ram_ffjaqf.jpg"
+    },
+    {
+      "id": 5,
+      "name": "FFFFF",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778355/fffff_t2dhum.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Maghreb 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778356/maghreb-100_pplpf7.jpg"
+    },
+    {
+      "id": 7,
+      "name": "ESHIT 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778357/ESHIT-100_fxetqg.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Azura 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778358/azura-100_pbm5jt.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Domino 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778358/domino-100_cayvqk.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Anapec 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778359/anapec-100_cs0o8p.jpg"
+    },
+    {
+      "id": 11,
+      "name": "SGTI 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778360/sgti-100_covovn.jpg"
+    },
+    {
+      "id": 12,
+      "name": "OFPPT 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778360/ofppt-100_ri7ivy.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Accent 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778361/accent-100_meyzim.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Cosumar 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778362/cosumar-100_rvvapt.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Tectra 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778363/tectra-100_lhsa9f.jpg"
+    },
+    {
+      "id": 16,
+      "name": "MSC",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778364/msc-1_kh6kyq.gif"
+    },
+    {
+      "id": 17,
+      "name": "Madrex 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778365/madrex-100_gjdy21.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Levier RH",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778366/levier-rh_oshlpr.jpg"
+    },
+    {
+      "id": 19,
+      "name": "ALTEN",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778366/ALTEN-1_zxsgxf.png"
+    },
+    {
+      "id": 20,
+      "name": "IFREME",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778367/ifremeee_nx249e.jpg"
+    },
+    {
+      "id": 21,
+      "name": "CMC",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778368/cmc_vxp9ev.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Cupra",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778369/cuppra_j36rtg.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Coooffff",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778370/coooffff_cviv1m.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Younn",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778371/younn_ghz3ez.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Alma",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778372/alma-1_ffjc8i.png"
+    },
+    {
+      "id": 26,
+      "name": "Ampeth",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778373/ampeth_vxmkrk.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Inttt",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778374/inttt_y5jlkc.jpg"
+    }
+  ],
+  "gold": [
+    {
+      "id": 1,
+      "name": "Oncfff",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778354/oncfff_jgwisk.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Maroc Force 1",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778355/maroc-force-1_jmztip.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Ensiit",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778355/ensiit_nnl8xh.jpg"
+    },
+    {
+      "id": 4,
+      "name": "RAM",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778355/ram_ffjaqf.jpg"
+    },
+    {
+      "id": 5,
+      "name": "FFFFF",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778355/fffff_t2dhum.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Maghreb 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778356/maghreb-100_pplpf7.jpg"
+    },
+    {
+      "id": 7,
+      "name": "ESHIT 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778357/ESHIT-100_fxetqg.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Azura 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778358/azura-100_pbm5jt.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Domino 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778358/domino-100_cayvqk.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Anapec 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778359/anapec-100_cs0o8p.jpg"
+    },
+    {
+      "id": 11,
+      "name": "SGTI 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778360/sgti-100_covovn.jpg"
+    },
+    {
+      "id": 12,
+      "name": "OFPPT 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778360/ofppt-100_ri7ivy.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Accent 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778361/accent-100_meyzim.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Cosumar 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778362/cosumar-100_rvvapt.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Tectra 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778363/tectra-100_lhsa9f.jpg"
+    },
+    {
+      "id": 16,
+      "name": "MSC",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778364/msc-1_kh6kyq.gif"
+    },
+    {
+      "id": 17,
+      "name": "Madrex 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778365/madrex-100_gjdy21.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Levier RH",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778366/levier-rh_oshlpr.jpg"
+    },
+    {
+      "id": 19,
+      "name": "ALTEN",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778366/ALTEN-1_zxsgxf.png"
+    },
+    {
+      "id": 20,
+      "name": "IFREME",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778367/ifremeee_nx249e.jpg"
+    },
+    {
+      "id": 21,
+      "name": "CMC",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778368/cmc_vxp9ev.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Cupra",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778369/cuppra_j36rtg.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Coooffff",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778370/coooffff_cviv1m.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Younn",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778371/younn_ghz3ez.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Alma",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778372/alma-1_ffjc8i.png"
+    },
+    {
+      "id": 26,
+      "name": "Ampeth",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778373/ampeth_vxmkrk.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Inttt",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778374/inttt_y5jlkc.jpg"
+    }
+  ],
+  "official": [
+    {
+      "id": 1,
+      "name": "Oncfff",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778354/oncfff_jgwisk.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Maroc Force 1",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778355/maroc-force-1_jmztip.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Ensiit",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778355/ensiit_nnl8xh.jpg"
+    },
+    {
+      "id": 4,
+      "name": "RAM",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778355/ram_ffjaqf.jpg"
+    },
+    {
+      "id": 5,
+      "name": "FFFFF",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778355/fffff_t2dhum.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Maghreb 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778356/maghreb-100_pplpf7.jpg"
+    },
+    {
+      "id": 7,
+      "name": "ESHIT 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778357/ESHIT-100_fxetqg.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Azura 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778358/azura-100_pbm5jt.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Domino 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778358/domino-100_cayvqk.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Anapec 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778359/anapec-100_cs0o8p.jpg"
+    },
+    {
+      "id": 11,
+      "name": "SGTI 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778360/sgti-100_covovn.jpg"
+    },
+    {
+      "id": 12,
+      "name": "OFPPT 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778360/ofppt-100_ri7ivy.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Accent 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778361/accent-100_meyzim.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Cosumar 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778362/cosumar-100_rvvapt.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Tectra 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778363/tectra-100_lhsa9f.jpg"
+    },
+    {
+      "id": 16,
+      "name": "MSC",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778364/msc-1_kh6kyq.gif"
+    },
+    {
+      "id": 17,
+      "name": "Madrex 100",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778365/madrex-100_gjdy21.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Levier RH",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778366/levier-rh_oshlpr.jpg"
+    },
+    {
+      "id": 19,
+      "name": "ALTEN",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778366/ALTEN-1_zxsgxf.png"
+    },
+    {
+      "id": 20,
+      "name": "IFREME",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778367/ifremeee_nx249e.jpg"
+    },
+    {
+      "id": 21,
+      "name": "CMC",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778368/cmc_vxp9ev.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Cupra",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778369/cuppra_j36rtg.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Coooffff",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778370/coooffff_cviv1m.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Younn",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778371/younn_ghz3ez.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Alma",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778372/alma-1_ffjc8i.png"
+    },
+    {
+      "id": 26,
+      "name": "Ampeth",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778373/ampeth_vxmkrk.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Inttt",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1760778374/inttt_y5jlkc.jpg"
+    }
+  ]
+}

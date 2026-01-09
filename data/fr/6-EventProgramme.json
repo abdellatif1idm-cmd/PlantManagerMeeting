@@ -1,0 +1,166 @@
+{
+  "day1": {
+    "dayDate": "06/05/2026",
+    "dayTitle": "Le Maroc, plateforme de convergence industrielle mondiale",
+    "programme": [
+      {
+        "time": "09:00-10:00",
+        "title": "Accueil officiel",
+        "subTitles": [
+          "Accréditations & réception des participants",
+          "Networking international (VIP & délégations étrangères)"
+        ],
+        "activities": [
+          "Accréditations",
+          "Networking international",
+          "Visite libre de l’espace exposition"
+        ]
+      },
+      {
+        "time": "10:00-11:00",
+        "title": "Cérémonie d’ouverture officielle",
+        "subTitles": [
+          "Le Maroc, carrefour des industries mondiales"
+        ],
+        "activities": [
+          "Allocution institutionnelle",
+          "Discours du Président d’Industry Meeting Days",
+          "Interventions des représentants des pays d’honneur (USA & Espagne)"
+        ]
+      },
+      {
+        "time": "11:00-12:30",
+        "title": "Panel stratégique de haut niveau",
+        "subTitles": [
+          "Nouvelles chaînes de valeur mondiales : où se positionne le Maroc ?"
+        ],
+        "activities": [
+          "Reconfiguration des supply chains mondiales",
+          "Friendshoring, nearshoring, co-production",
+          "Rôle du Maroc dans les équilibres industriels globaux",
+          "Interventions : institutions marocaines, investisseurs internationaux, industriels USA / Espagne"
+        ]
+      },
+      {
+        "time": "12:30-14:00",
+        "title": "Déjeuner officiel & networking international",
+        "subTitles": null,
+        "activities": [
+          "Déjeuner officiel",
+          "Networking B2B et institutionnel"
+        ]
+      },
+      {
+        "time": "14:00-15:30",
+        "title": "Focus Pays d’honneur – USA",
+        "subTitles": [
+          "Partenariats industriels Maroc – États-Unis"
+        ],
+        "activities": [
+          "Industrie avancée & technologies",
+          "Énergies, défense, aéronautique, digital industry",
+          "Joint-ventures & implantation industrielle"
+        ]
+      },
+      {
+        "time": "15:45-17:15",
+        "title": "Focus Pays d’honneur – Espagne",
+        "subTitles": [
+          "Le corridor industriel Maroc – Espagne – Europe"
+        ],
+        "activities": [
+          "Industrie automobile & équipements",
+          "Logistique, ports, industrie verte",
+          "PME industrielles et co-investissements"
+        ]
+      },
+      {
+        "time": "17:30-18:30",
+        "title": "B2B & rencontres ciblées",
+        "subTitles": null,
+        "activities": [
+          "Rendez-vous B2B préprogrammés",
+          "Speed meetings investisseurs / industriels",
+          "Networking institutionnel"
+        ]
+      }
+    ]
+  },
+  "day2": {
+    "dayDate": "07/05/2026",
+    "dayTitle": "Produire ensemble, investir durablement, rayonner à l’international",
+    "programme": [
+      {
+        "time": "09:30-11:00",
+        "title": "Panel Business & Investissement",
+        "subTitles": [
+          "Produire au Maroc pour les marchés mondiaux"
+        ],
+        "activities": [
+          "Avantages compétitifs du Maroc",
+          "Zones industrielles & écosystèmes",
+          "Success stories internationales (USA / Espagne / Afrique)"
+        ]
+      },
+      {
+        "time": "11:15-12:30",
+        "title": "Panel sectoriel",
+        "subTitles": [
+          "Panels spécialisés selon priorités industrielles"
+        ],
+        "activities": [
+          "Automobile & mobilité",
+          "Aéronautique & défense",
+          "Énergies & industrie verte",
+          "Agro-industrie & food processing",
+          "Industrie pharmaceutique & chimique"
+        ]
+      },
+      {
+        "time": "12:30-14:00",
+        "title": "Déjeuner & visite de l’espace exposition",
+        "subTitles": null,
+        "activities": [
+          "Déjeuner networking",
+          "Visite des stands et rencontres exposants"
+        ]
+      },
+      {
+        "time": "14:00-15:15",
+        "title": "Panel Afrique",
+        "subTitles": [
+          "Le Maroc, porte d’entrée industrielle vers l’Afrique"
+        ],
+        "activities": [
+          "Plateformes marocaines vers l’Afrique",
+          "Co-production & export",
+          "Financement & accompagnement des projets africains"
+        ]
+      },
+      {
+        "time": "15:30-16:45",
+        "title": "Panel Innovation & Industrie 4.0",
+        "subTitles": [
+          "Industrie mondiale : digitalisation, IA et compétitivité"
+        ],
+        "activities": [
+          "Smart factories",
+          "Data industrielle",
+          "Cybersécurité & résilience industrielle"
+        ]
+      },
+      {
+        "time": "17:00-18:00",
+        "title": "Session de clôture",
+        "subTitles": [
+          "Déclarations, engagements & perspectives internationales"
+        ],
+        "activities": [
+          "Synthèse stratégique",
+          "Annonces de partenariats",
+          "Perspectives pour la 9ᵉ édition"
+        ]
+      }
+    ]
+  }
+}

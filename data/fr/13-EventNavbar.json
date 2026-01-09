@@ -1,0 +1,17 @@
+[
+  { "label": "Accueil", "path": "/" },
+
+  {
+    "label": "Éditions",
+    "path": "/editions"
+  },
+  {
+    "label": "Awards",
+    "path": "/awards"
+  },
+  {
+    "label": "Presse",
+    "path": "/press"
+  },
+  { "label": "Contact", "path": "/contact" }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "Label": "Badge Gratuit",
+    "slug": "free",
+    "path": "/participate/free",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767604983/free_badge2_ugftaj.png",
+    "description": "Accédez gratuitement à l’événement et découvrez les conférences, ateliers et intervenants sans engagement financier.",
+    "redirection": "https://industricom-group.odoo.com/event/industry-meeting-days-2026-10/register"
+  },
+  {
+    "Label": "Networking",
+    "slug": "networking",
+    "path": "/participate/networking",
+    "price":"12 000",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767948272/3X7A6656_bdxmig.jpg",
+    "description": "Profitez d’un espace privilégié pour rencontrer des professionnels, échanger des idées et créer de nouvelles opportunités de collaboration."
+  },
+  {
+    "Label": "Stand",
+    "slug": "stand",
+    "path": "/participate/stand",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767948715/stands_clnvul.png",
+    "description": "Exposez votre marque ou vos services dans un espace dédié pour renforcer votre visibilité auprès des participants et partenaires.",
+    "extra-plans": [
+      {
+        "name": "Stand Standard",
+        "slug": "stand-standard",
+        "description": "Espace d'exposition de base avec mobilier standard.",
+        "price": "55 000",
+        "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767948269/WhatsApp_Image_2025-07-21_at_20.06.24_1_k5xemf.jpg",
+        "path": "/participate/stand/stand-standard"
+      },
+      {
+        "name": "Stand Premium",
+        "slug": "stand-premium",
+        "description": "Espace d'exposition amélioré avec options de personnalisation.",
+        "price": "120 000",
+        "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767948281/3X7A6552_tsh8bd.jpg",
+        "path": "/participate/stand/stand-premium"
+      }
+    ]
+  },
+  {
+    "Label": "Sponsoring",
+    "slug": "sponsoring",
+    "path": "/participate/sponsoring",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767521336/imd_sponsoring_yvnng5.png",
+    "description": "Associez votre image à l’événement en tant que sponsor officiel et bénéficiez d’une visibilité renforcée avant, pendant et après l’événement."
+  }
+]

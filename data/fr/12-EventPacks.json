@@ -1,0 +1,109 @@
+[
+  {
+    "title": "Silver",
+    "slug": "silver",
+    "price": "200 000",
+    "color": "gray",
+    "benefits": [
+      "Stand 12 m² (1 table et 3 chaises)",
+      "Logo sur tous les outils de communication",
+      "Logo sur le site web de l’évènement",
+      "Logo sur l’ensemble des emailings et newsletters",
+      "Animation sur les réseaux sociaux (LinkedIn & Facebook)",
+      "Logo sur les invitations print et électroniques",
+      "Insertion publicitaire Industrie du Maroc Magazine : 1/2 page",
+      "Insertion publicitaire Magazine arabe : 1/2 page",
+      "Insertion de bannière sur industries.ma et ar.industries.ma : 2 semaines",
+      "Production d’une capsule vidéo BEST OF : 1’",
+      "2 accès (B2B / Networking / VIP / Catering)",
+      "Abonnement IDM annuel x3"
+    ]
+  },
+  {
+    "title": "Gold",
+    "slug": "gold",
+    "price": "300 000",
+    "color": "amber",
+    "benefits": [
+      "Stand 18 m² (1 table et 3 chaises)",
+      "Logo sur tous les outils de communication",
+      "Logo sur le site web de l’évènement",
+      "Logo sur l’ensemble des emailings et newsletters",
+      "Animation sur les réseaux sociaux (LinkedIn & Facebook)",
+      "Logo sur les invitations print et électroniques",
+      "Insertion publicitaire Industrie du Maroc Magazine : Pleine page",
+      "Insertion publicitaire Magazine arabe : Pleine page",
+      "Insertion de bannière sur industries.ma et ar.industries.ma : 3 semaines",
+      "Production d’une capsule vidéo BEST OF : 2’",
+      "Droit de parole (panel ou atelier)",
+      "3 accès (B2B / Networking / VIP / Catering)",
+      "Abonnement IDM annuel x4"
+    ]
+  },
+  {
+    "title": "Platinum",
+    "slug": "platinum",
+    "price": "600 000",
+    "color": "blue",
+    "benefits": [
+      "Stand 24 m² (2 tables et 4 chaises)",
+      "Logo sur tous les outils de communication",
+      "Logo sur le site web de l’évènement",
+      "Logo sur l’ensemble des emailings et newsletters",
+      "Animation sur les réseaux sociaux (LinkedIn & Facebook)",
+      "Logo sur les invitations print et électroniques",
+      "Insertion publicitaire Industrie du Maroc Magazine : Pleine page + 1/2 page",
+      "Insertion publicitaire Magazine arabe : Pleine page + 1/2 page",
+      "Insertion de bannière sur industries.ma et ar.industries.ma : 4 semaines",
+      "Production d’une capsule vidéo BEST OF : 3’",
+      "Droit de parole (panel ou atelier)",
+      "6 accès (B2B / Networking / VIP / Catering)",
+      "Abonnement IDM annuel x5"
+    ]
+  },
+  {
+    "title": "Prestige",
+    "slug": "prestige",
+    "price": "1 000 000",
+    "color": "teal",
+    "benefits": [
+      "Stand 36 m² (2 tables et 6 chaises)",
+      "Logo sur tous les outils de communication",
+      "Logo sur le site web de l’évènement",
+      "Logo sur l’ensemble des emailings et newsletters",
+      "Animation sur les réseaux sociaux (LinkedIn & Facebook)",
+      "Logo sur les invitations print et électroniques",
+      "Insertion publicitaire Industrie du Maroc Magazine : Double page",
+      "Insertion publicitaire Magazine arabe : Double page",
+      "Insertion de bannière sur industries.ma et ar.industries.ma : 5 semaines",
+      "Production d’une capsule vidéo BEST OF : 4’",
+      "Droit de parole (panel ou atelier)",
+      "10 accès (B2B / Networking / VIP / Catering)",
+      "Abonnement IDM annuel x6",
+      "Remise d’une base de visiteurs"
+    ]
+  },
+  {
+    "title": "Officiel",
+    "slug": "officiel",
+    "price": "Nous consulter",
+    "color": "indigo",
+    "benefits": [
+      "Stand 45 m² (2 tables et 6 chaises)",
+      "Logo sur tous les outils de communication",
+      "Logo sur le site web de l’évènement",
+      "Logo sur l’ensemble des emailings et newsletters",
+      "Animation sur les réseaux sociaux (LinkedIn & Facebook)",
+      "Logo sur les invitations print et électroniques",
+      "Insertion publicitaire Industrie du Maroc Magazine : Emplacement de rigueur + Double page",
+      "Insertion publicitaire Magazine arabe : Emplacement de rigueur + Double page",
+      "Insertion de bannière sur industries.ma et ar.industries.ma : 6 semaines",
+      "Production d’une capsule vidéo BEST OF : 5’",
+      "Droit de parole (panel ou atelier)",
+      "13 accès (B2B / Networking / VIP / Catering)",
+      "Abonnement IDM annuel x7",
+      "Remise d’une base de visiteurs",
+      "Déjeuner offert par le sponsor officiel (mentionné)"
+    ]
+  }
+]

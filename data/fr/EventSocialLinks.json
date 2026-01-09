@@ -1,0 +1,31 @@
+{
+  "Press": "https://docs.google.com/forms/d/e/1FAIpQLSd2c0mdNbrNYxy1u8D2TV7LwPB5H5J1lInfEqAsvMRmbh_SRA/viewform?usp=header",
+  "Awards": "https://docs.google.com/forms/d/e/1FAIpQLSdtETTx_HYeDkME3stSL71z2A0XYaEuzv8CkQii6n7WC7RQLg/viewform?usp=header",
+  "Medias": [
+    {
+      "label": "linkedin",
+      "path": "https://www.linkedin.com/company/industrie-du-maroc-magazine",
+      "icon": "ri-linkedin-line"
+    },
+    {
+      "label": "twitterX",
+      "path": "https://x.com/industrie_mag",
+      "icon": "ri-twitter-x-line"
+    },
+    {
+      "label": "instagram",
+      "path": "https://www.instagram.com/industriedumaroc/",
+      "icon": "ri-instagram-line"
+    },
+    {
+      "label": "website",
+      "path": "https://industries.ma/",
+      "icon": "ri-global-line"
+    }
+  ],
+  "Contact": {
+    "email": "contact@industries.ma",
+    "phone": "+212 5 22 26 04 51",
+    "location": "LOT N°6, Lotissement BEVERLY, Casablanca"
+  }
+}

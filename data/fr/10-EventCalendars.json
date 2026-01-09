@@ -1,0 +1,57 @@
+[
+  {
+    "eventLogo": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758813450/LMI_M-E_Plan_de_travail_1_copie_kut3y8.png",
+    "eventTitle": "Les Matinées de l'Industrie Maroc/Espagne",
+    "eventDescription": "Une rencontre bilatérale Maroc-Espagne axée sur la coopération industrielle et l’investissement, mettant en lumière les opportunités méditerranéennes et favorisant échanges entre institutions, industriels et investisseurs, avec un focus sur l’innovation et l’industrie durable.",
+    "eventEdition": "1",
+    "eventThumbnail": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758820049/background_zucjpb.jpg",
+    "eventCity": "Barcelone",
+    "eventDay": "04",
+    "eventMonth": "12",
+    "eventYear": "2025",
+    "eventUrl": ""
+  },
+  {
+    "eventLogo": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758813732/omd_cli4gm.png",
+    "eventTitle": "Oriental Meeting Days",
+    "eventDescription": "Événement stratégique stimulant la dynamique industrielle de l’Oriental, valorisant investissements, partenariats public-privé, innovation et talents locaux pour renforcer l’attractivité économique de la région",
+    "eventEdition": "1",
+    "eventThumbnail": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758820094/background_wpb3dw.jpg",
+    "eventCity": "Nador",
+    "eventDay": "21",
+    "eventMonth": "11",
+    "eventYear": "2025",
+    "eventUrl": ""
+  },
+  {
+    "eventLogo": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758813384/300_150_AGRIWATER_Plan_de_travail_1_copie_maoriy.png",
+    "eventTitle": "AgriWater 4.0",
+    "eventDescription": "Un rendez-vous stratégique autour des filières agro-industrielles, axé sur l’innovation, la gestion intelligente de l’eau et l’agriculture durable, favorisant le dialogue entre chercheurs, industriels, startups et décideurs pour faire du Souss Massa un hub d’innovation agro-industrielle.",
+    "eventEdition": "1",
+    "eventThumbnail": "https://res.cloudinary.com/dzcarbymi/image/upload/v1759245402/agriwater_cbmaws.jpg",
+    "eventCity": "Agadir",
+    "eventDay": "21",
+    "eventMonth": "10",
+    "eventYear": "2025",
+    "eventUrl": ""
+  },
+  {
+    "eventLogo": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758819408/emploi_m4fpgr.png",
+    "eventTitle": "Forum de l'Emploi et la Compétence",
+    "eventDescription": "Un forum reliant employeurs et talents du secteur industriel, favorisant recrutement, formation et insertion professionnelle, tout en valorisant les métiers de l’industrie 4.0 et de la transformation digitale.",
+    "eventEdition": "2",
+    "eventThumbnail": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758820203/imgi_15_le-carre-dor-salle-Esplanade_pz0gwa.png",
+    "eventCity": "Casablanca",
+    "eventDay": "23",
+    "eventMonth": "12",
+    "eventYear": "2025",
+    "eventUrl": "",
+    "colors": {
+      "primary": "",
+      "secondary": "",
+      "accent": "",
+      "text": "",
+      "text-inverted": ""
+    }
+  }
+]

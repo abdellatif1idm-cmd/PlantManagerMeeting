@@ -1,0 +1,185 @@
+@utility navbar-item {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background: var(--accent-11);
+    box-shadow: 0 0 10px var(--accent-12);
+    border-radius: 10px;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  &:not(:hover)::after {
+    transform-origin: right;
+  }
+}
+
+@utility programme-tab {
+  @apply bg-conic-0 text-xl! before:bg-transparent! duration-200! data-[state=active]:text-white! z-20! text-(--accent-11)! h-full!;
+}
+
+@utility footer-link {
+  @apply hover:text-(--accent-a11) hover:text-shadow-[0px_2px_2px_var(--accent-1)] transition!;
+}
+
+/* ---benefits--- */
+@property --bg-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: "<angle>";
+}
+
+@keyframes benefitAnimation {
+  to {
+    --bg-angle: 360deg;
+  }
+}
+
+@utility benefit-card {
+  box-shadow: 0 2px 15px inset var(--accent-10);
+  background: color-mix(in oklab, var(--accent-5) 25%, transparent);
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    size: 100%;
+    background: conic-gradient(
+      from var(--bg-angle) at 50% 50%,
+      transparent 0deg,
+      var(--accent-a12),
+      transparent 90deg
+    );
+    animation: benefitAnimation 3s linear infinite;
+  }
+  &:nth-child(odd)::before {
+    animation-delay: 850ms;
+  }
+}
+/* -------- */
+
+/* ---dynamic-plan--- */
+@utility dynamic-plan-card {
+  @apply size-full shadow-lg shadow-black/50 overflow-hidden absolute inset-0 rounded-xl transform-3d duration-700;
+
+  &:nth-child(1) {
+    animation: rotate-dynamic-plan-card1 15s linear infinite;
+    transform: rotateY(0deg);
+  }
+  &:nth-child(2) {
+    animation: rotate-dynamic-plan-card2 15s linear infinite;
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes rotate-dynamic-plan-card1 {
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+@keyframes rotate-dynamic-plan-card2 {
+  to {
+    transform: rotateY(-180deg);
+  }
+}
+
+/* --------- */
+
+@utility pack-card {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      70deg,
+      transparent 0 45%,
+      var(--gray-12) 48% 52%,
+      transparent 55% 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position-x: -150vw;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    z-index: 20;
+    opacity: 0.8;
+    animation: shine 10s ease-in-out infinite 100ms;
+  }
+
+  &:nth-child(2)::after {
+    animation-delay: 0.2s;
+  }
+  &:nth-child(3)::after {
+    animation-delay: 0.4s;
+  }
+  &:nth-child(4)::after {
+    animation-delay: 0.6s;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -150vw;
+  }
+  100% {
+    background-position-x: 150vw;
+  }
+}
+
+@utility shining-cta {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      70deg,
+      transparent 0 45%,
+      var(--gray-12) 48% 52%,
+      transparent 55% 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position-x: -150vw;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    z-index: 20;
+    opacity: 0.8;
+    animation: shineCta 5s ease-in-out infinite;
+  }
+}
+
+@keyframes shineCta {
+  0% {
+    background-position-x: -500px;
+  }
+  100% {
+    background-position-x: 500px;
+  }
+}

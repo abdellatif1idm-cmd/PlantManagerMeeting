@@ -1,0 +1,26 @@
+[
+  {
+    "Label": "Visiteurs et professionnels",
+    "Value": "3000",
+    "Icon": "ri-group-fill",
+    "isPlus": true
+  },
+  {
+    "Label": "Intervenants",
+    "Value": "20",
+    "Icon": "ri-mic-fill",
+    "isPlus": true
+  },
+  {
+    "Label": "Partenaires",
+    "Value": "50",
+    "Icon": "ri-shake-hands-fill",
+    "isPlus": true
+  },
+  {
+    "Label": "Secteurs Stratégiques",
+    "Value": "10",
+    "Icon": "ri-bar-chart-grouped-fill",
+    "isPlus": true
+  }
+]
