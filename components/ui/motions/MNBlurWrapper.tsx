@@ -1,15 +1,23 @@
 "use client";
-import React from "react";
+import React, { memo } from "react";
 import { motion } from "motion/react";
 
 interface MNBlurWrapperProps {
   initialPosition?: "top" | "left" | "bottom" | "right" | "center";
   duration?: number;
-  children?: React.ReactNode;
   delay?: number;
   mode?: "animate" | "whileInView";
   className?: string;
+  children?: React.ReactNode;
 }
+
+const POSITION_MAP = {
+  top: { x: 0, y: -60 },
+  bottom: { x: 0, y: 60 },
+  left: { x: -60, y: 0 },
+  right: { x: 60, y: 0 },
+  center: { x: 0, y: 0 },
+} as const;
 
 const MNBlurWrapper = ({
   initialPosition = "bottom",
@@ -19,74 +27,39 @@ const MNBlurWrapper = ({
   className,
   children,
 }: MNBlurWrapperProps) => {
-  const getInitialPosition = () => {
-    switch (initialPosition) {
-      case "top":
-        return { x: 0, y: -60 };
-      case "bottom":
-        return { x: 0, y: 60 };
-      case "left":
-        return { x: -60, y: 0 };
-      case "right":
-        return { x: 60, y: 0 };
-      case "center":
-        return { x: 0, y: 0 };
-      default:
-        return { x: 0, y: 60 };
-    }
+  const initial = {
+    ...POSITION_MAP[initialPosition],
+    opacity: 0,
+    filter: "blur(10px)",
+  };
+
+  const animate = {
+    x: 0,
+    y: 0,
+    opacity: 1,
+    filter: "blur(0px)",
   };
 
   return (
-    <>
-      {mode === "whileInView" ? (
-        <motion.div
-          initial={{
-            ...getInitialPosition(),
-            opacity: 0,
-            filter: "blur(10px)",
-          }}
-          whileInView={{
-            x: 0,
-            y: 0,
-            opacity: 1,
-            filter: "blur(0px)",
-          }}
-          transition={{
-            duration,
-            ease: "easeOut",
-            delay,
-          }}
-          viewport={{ once: true, amount: "some" }}
-          className={className}
-        >
-          {children}
-        </motion.div>
-      ) : (
-        <motion.div
-          initial={{
-            ...getInitialPosition(),
-            opacity: 0,
-            filter: "blur(10px)",
-          }}
-          animate={{
-            x: 0,
-            y: 0,
-            opacity: 1,
-            filter: "blur(0px)",
-          }}
-          transition={{
-            duration,
-            ease: "easeOut",
-            delay,
-          }}
-          viewport={{ once: true, amount: "some" }}
-          className={className}
-        >
-          {children}
-        </motion.div>
-      )}
-    </>
+    <motion.div
+      initial={initial}
+      animate={mode === "animate" ? animate : undefined}
+      whileInView={mode === "whileInView" ? animate : undefined}
+      transition={{
+        duration,
+        ease: "easeOut",
+        delay,
+      }}
+      viewport={
+        mode === "whileInView"
+          ? { once: true, amount: 0.3 }
+          : undefined
+      }
+      className={className}
+    >
+      {children}
+    </motion.div>
   );
 };
 
-export default React.memo(MNBlurWrapper);
+export default memo(MNBlurWrapper);
