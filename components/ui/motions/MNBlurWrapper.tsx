@@ -89,4 +89,4 @@ const MNBlurWrapper = ({
   );
 };
 
-export default MNBlurWrapper;
+export default React.memo(MNBlurWrapper);

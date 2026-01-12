@@ -1,6 +1,6 @@
 import React, { JSX } from "react";
 import MNSectionTitle from "../ui/motions/MNSectionTitle";
-import { BackgroundThreads } from "../ui/motions/BackgroundThreads";
+import BackgroundThreads from "../ui/motions/BackgroundThreads";
 
 interface SectionProps extends React.HTMLAttributes<HTMLElement> {
   title?: string;
@@ -20,14 +20,10 @@ export default function Section({
   ...props
 }: SectionProps): JSX.Element {
   const textureEnabled =
-    typeof withTexture === "boolean"
-      ? withTexture
-      : withTexture.enabled;
+    typeof withTexture === "boolean" ? withTexture : withTexture.enabled;
 
   const textureClassName =
-    typeof withTexture === "object"
-      ? withTexture.className
-      : "rotate-25";
+    typeof withTexture === "object" ? withTexture.className : "rotate-25";
 
   return (
     <section className="w-full relative" {...props}>
@@ -36,9 +32,7 @@ export default function Section({
         {children}
       </div>
 
-      {textureEnabled && (
-        <BackgroundThreads className={textureClassName} />
-      )}
+      {textureEnabled && <BackgroundThreads className={textureClassName} />}
     </section>
   );
 }

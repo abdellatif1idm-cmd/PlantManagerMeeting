@@ -1,7 +1,8 @@
+import React from "react";
 import Image from "next/image";
 import MNBlurWrapper from "./MNBlurWrapper";
 
-export const BackgroundThreads = ({ className }: { className?: string }) => (
+const BackgroundThreads = ({ className }: { className?: string }) => (
   <div className="absolute inset-0 bg-(--color-background) mask-y-from-80% mask-y-to-100% size-full overflow-hidden select-none -z-9999">
     <div
       className={`absolute size-full mix-blend-screen opacity-40 ${
@@ -23,3 +24,5 @@ export const BackgroundThreads = ({ className }: { className?: string }) => (
     </div>
   </div>
 );
+
+export default React.memo(BackgroundThreads);

@@ -1,4 +1,4 @@
-import { BackgroundThreads } from "@/components/ui/motions/BackgroundThreads";
+import BackgroundThreads from "@/components/ui/motions/BackgroundThreads";
 import RoyalImage from "./elements/RoyalImage";
 import RoyalText from "./elements/RoyalText";
 

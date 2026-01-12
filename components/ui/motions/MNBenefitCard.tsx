@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import { motion } from "motion/react";
 const MNBenefitCard = ({
   children,
@@ -36,4 +37,4 @@ const MNBenefitCard = ({
   );
 };
 
-export default MNBenefitCard;
+export default React.memo(MNBenefitCard);

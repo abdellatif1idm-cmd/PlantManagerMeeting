@@ -1,6 +1,6 @@
 "use client";
-import { motion } from "motion/react";
 import React from "react";
+import { motion } from "motion/react";
 
 const MNSectionTitle = ({ title }: { title: string }) => {
   // Split title into letters for staggered animation
@@ -50,4 +50,4 @@ const MNSectionTitle = ({ title }: { title: string }) => {
   );
 };
 
-export default MNSectionTitle;
+export default React.memo(MNSectionTitle);

@@ -13,6 +13,25 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Webpack config for when Turbopack is not used
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "motion/react": "motion/react",
+    };
+    return config;
+  },
+
+  // Turbopack config (moved from experimental.turbo)
+  turbopack: {
+    resolveAlias: {
+      "motion/react": "motion/react",
+    },
+  },
+
+  experimental: {
+    optimizePackageImports: ["motion"],
+  },
 };
 
 export default nextConfig;

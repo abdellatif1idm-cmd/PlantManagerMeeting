@@ -1,4 +1,4 @@
-import { BackgroundThreads } from "@/components/ui/motions/BackgroundThreads";
+import BackgroundThreads from "@/components/ui/motions/BackgroundThreads";
 import PresidentImage from "./elements/PresidentImage";
 import PresidentText from "./elements/PresidentText";
 
