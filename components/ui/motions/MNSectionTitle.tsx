@@ -1,45 +1,48 @@
 "use client";
-import React from "react";
+import React, { memo, useMemo } from "react";
 import { motion } from "motion/react";
+import type { Variants } from "motion/react";
+
+const containerVariants: Variants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.04,
+    },
+  },
+};
+
+const letterVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+      ease: "easeOut",
+    },
+  },
+};
 
 const MNSectionTitle = ({ title }: { title: string }) => {
-  // Split title into letters for staggered animation
-  const letters = title.split("");
+  const letters = useMemo(() => title.split(""), [title]);
 
   return (
-    <h2 className="text-2xl lg:text-3xl  text-center mb-8 overflow-hidden">
+    <h2 className="text-2xl lg:text-3xl text-center mb-8 overflow-hidden">
       <motion.span
+        variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.4 }}
         className="inline-flex flex-wrap px-2"
       >
         {letters.map((letter, index) => (
           <motion.span
             key={index}
-            variants={{
-              hidden: {
-                opacity: 0,
-                y: 20,
-                rotate: -10,
-                scale: 0.8,
-                filter: "blur(10px)",
-              },
-              visible: {
-                opacity: 1,
-                y: 0,
-                rotate: 0,
-                scale: 1,
-                filter: "blur(0px)",
-                transition: {
-                  duration: 0.3,
-                  delay: index * 0.05,
-                  type: "spring",
-                  stiffness: 500,
-                  damping: 30,
-                },
-              },
-            }}
+            variants={letterVariants}
             className="inline-block font-normal uppercase"
           >
             {letter === " " ? "\u00A0" : letter}
@@ -50,4 +53,4 @@ const MNSectionTitle = ({ title }: { title: string }) => {
   );
 };
 
-export default React.memo(MNSectionTitle);
+export default memo(MNSectionTitle);
