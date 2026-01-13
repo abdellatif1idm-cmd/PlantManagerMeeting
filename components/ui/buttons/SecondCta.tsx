@@ -13,7 +13,7 @@ export default function SecondCta() {
           className="cursor-pointer! bg-(--orange-2)/20!"
         >
           <span className="text-sm lg:text-xl px-2">
-            Networker
+            Pass VIP
           </span>
         </Button>
       </Link>

@@ -19,7 +19,7 @@ export default function MainCta({ device = "desktop" }: MainCtaProps) {
       onClick={() => device === "mobile" && dispatch(setMenuClose())}
     >
       <button className="h-5/6! rounded-full font-medium px-8! flex items-center bg-(--orange-9)/10 border-2 border-(--orange-9) shining-cta">
-        <span className="text-xl text-(--orange-9) text-center w-full">Participer</span>
+        <span className="text-xl text-(--orange-9) text-center w-full">S’inscrire</span>
       </button>
     </Link>
   );

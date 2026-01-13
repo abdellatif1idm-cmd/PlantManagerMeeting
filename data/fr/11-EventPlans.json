@@ -1,6 +1,6 @@
 [
   {
-    "Label": "Badge Gratuit",
+    "Label": "Badge",
     "slug": "free",
     "path": "/participate/free",
     "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767604983/free_badge2_ugftaj.png",
@@ -8,7 +8,7 @@
     "redirection": "https://industricom-group.odoo.com/event/industry-meeting-days-2026-10/register"
   },
   {
-    "Label": "Networking",
+    "Label": "Ticket Vip",
     "slug": "networking",
     "path": "/participate/networking",
     "price":"12 000",

@@ -1,7 +1,7 @@
 import Main from "@/components/layout/Main";
 import MainHero from "@/components/features/1-main-hero/MainHero";
 import RoyalSpeech from "@/components/features/2-royal-speech/RoyalSpeech";
-// import PresidentSpeech from "@/components/features/3-president-speech/PresidentSpeech";
+import PresidentSpeech from "@/components/features/3-president-speech/PresidentSpeech";
 import KeyFigures from "@/components/features/4-key-figures/KeyFigures";
 import Benefits from "@/components/features/5-benefits/Benefits";
 import Programme from "@/components/features/6-programme/Programme";
@@ -17,7 +17,7 @@ export default function HomePage() {
     <Main>
       <MainHero />
       <RoyalSpeech />
-      {/* <PresidentSpeech /> */}
+      <PresidentSpeech />
       <KeyFigures />
       <Benefits />
       <Programme />

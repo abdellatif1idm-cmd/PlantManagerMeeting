@@ -32,7 +32,7 @@ const PresidentText = () => {
         delay={0.3}
         className="w-full lg:w-5/6"
       >
-        <p className="w-full text-sm text-justify opacity-80">
+        <p className="w-full text-sm text-justify opacity-80 whitespace-pre-line">
           {EventPresidentSpeechListFr.EventPresidentSpeechText}
         </p>
       </MNBlurWrapper>

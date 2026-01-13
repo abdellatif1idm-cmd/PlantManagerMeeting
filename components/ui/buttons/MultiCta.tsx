@@ -33,7 +33,7 @@ export default function MultiCta() {
             color="orange"
             variant="classic"
           >
-            <span className="text-lg">Stand</span>
+            <span className="text-lg">Réserver Stand</span>
           </Button>
         </Link>
         <Link href={`/participate/sponsoring`} className="w-full">
@@ -43,7 +43,7 @@ export default function MultiCta() {
             color="orange"
             variant="classic"
           >
-            <span className="text-lg">Sponsoring</span>
+            <span className="text-lg">Devenir Sponsor</span>
           </Button>
         </Link>
       </div>
