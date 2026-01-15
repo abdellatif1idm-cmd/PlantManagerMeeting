@@ -30,7 +30,7 @@ const MNBlurWrapper = ({
   const initial = {
     ...POSITION_MAP[initialPosition],
     opacity: 0,
-    filter: "blur(10px)",
+    filter: "blur(5px)",
   };
 
   const animate = {

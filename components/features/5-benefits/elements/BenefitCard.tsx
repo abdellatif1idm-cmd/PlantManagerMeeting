@@ -10,7 +10,7 @@ interface BenefitsCardProps {
 }
 const BenefitCard = ({ benefit, index }: BenefitsCardProps) => {
   return (
-    <MNBenefitCard key={index} index={index}>
+    <MNBenefitCard key={String(index)} index={index}>
       <div className="size-full z-10 relative bg-(--color-background) mask-x-from-99% mask-x-to-100% mask-y-from-99% mask-y-to-100% rounded-lg flex flex-col justify-center items-center duration-400">
         <div className="w-full flex-1 grid grid-cols-4 items-center">
           <i
