@@ -22,7 +22,7 @@ const HeroDate = () => {
     <div className="flex items-center gap-x-1">
       <i className="ri-calendar-line size-fit text-lg" />
       <span>
-        <DateStringText date={EventBaseListFr.EventDate} />
+        {EventBaseListFr.EventDateString}
       </span>
     </div>
   );

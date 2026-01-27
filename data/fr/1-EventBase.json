@@ -1,6 +1,7 @@
 {
-  "EventDate": "2026-05-06 08:30:00",
   "EventName": "INDUSTRY MEETING DAYS ",
+  "EventDate": "2026-05-06 08:30:00",
+  "EventDateString": "06 - 07 mai 2026",
   "EventShortName": "IMD",
   "EventSubject": "LE MAROC",
   "EventTopic": "CARREFOUR DES INDUSTRIES MONDIALES",
@@ -14,5 +15,5 @@
   "EventAccentColor": "#00BCE3",
   "EventPrimaryColor": "#0E2544",
   "EventFavicon": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767776080/favicon_aagneu.ico",
-  "EventEmailImage":"https://res.cloudinary.com/dzcarbymi/image/upload/v1767865121/save_the_date_ovmooi.png"
+  "EventEmailImage": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767865121/save_the_date_ovmooi.png"
 }
