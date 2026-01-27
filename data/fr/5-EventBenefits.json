@@ -1,42 +1,42 @@
 [
   {
-    "icon": "ri-group-line",
-    "title": "Réseautage Industriel & Institutionnel",
-    "description": "Connectez-vous avec industriels, décideurs publics, investisseurs et institutions clés."
+    "icon": "https://res.cloudinary.com/dzcarbymi/image/upload/v1769511372/Sans_titre_-_4_Plan_de_travail_1_copie_11_ttdihp.png",
+    "title": "Conférences",
+    "description": "Des panels de haut niveau réunissant décideurs, industriels, experts et stratèges pour décrypter les tendances, défis et opportunités des nouvelles chaînes de valeur industrielles."
   },
   {
-    "icon": "ri-megaphone-line",
-    "title": "Visibilité & Image de Marque",
-    "description": "Valorisez votre marque auprès des acteurs industriels, économiques et médiatiques."
+    "icon": "https://res.cloudinary.com/dzcarbymi/image/upload/v1769511373/Sans_titre_-_4_Plan_de_travail_1_copie_ff9buc.png",
+    "title": "Industry Leaders VIP Lunch",
+    "description": "Un déjeuner confidentiel réservé aux top dirigeants, pour des échanges privilégiés, des connexions puissantes et des discussions à forte valeur ajoutée autour de l’industrie de demain."
   },
   {
-    "icon": "ri-shake-hands-line",
-    "title": "Opportunités de Partenariats",
-    "description": "Développez des collaborations stratégiques et des projets industriels communs."
+    "icon": "https://res.cloudinary.com/dzcarbymi/image/upload/v1769511372/Sans_titre_-_4_Plan_de_travail_1_copie_5_npkcws.png",
+    "title": "Village des Startups",
+    "description": "Un espace d’avant-garde où s’expriment les jeunes pousses industrielles, les technologies de rupture et l’innovation made in Morocco. Ici naissent les futurs champions."
   },
   {
-    "icon": "ri-star-line",
-    "title": "Accès Premium & Leadership",
-    "description": "Renforcez votre leadership grâce à une visibilité et des prises de parole ciblées."
+    "icon": "https://res.cloudinary.com/dzcarbymi/image/upload/v1769511373/Sans_titre_-_4_Plan_de_travail_1_lm0ger.png",
+    "title": "Live Studio IMD",
+    "description": "Un plateau média en direct du salon pour donner la parole aux leaders, capter les insights du moment et partager l’énergie de l’événement en temps réel avec notre audience nationale et internationale."
   },
   {
-    "icon": "ri-lightbulb-line",
-    "title": "Innovation & Industrie 4.0",
-    "description": "Explorez les innovations, la digitalisation et les technologies industrielles avancées."
+    "icon": "https://res.cloudinary.com/dzcarbymi/image/upload/v1769511373/Sans_titre_-_4_Plan_de_travail_1_copie_2_eyujie.png",
+    "title": "Exposition",
+    "description": "Une vitrine stratégique pour les industriels, territoires et solutions technologiques. Lieu de visibilité, de prospection et d’influence au cœur de Casablanca."
   },
   {
-    "icon": "ri-presentation-line",
-    "title": "Conférences & Ateliers Experts",
-    "description": "Participez à des conférences animées par des experts nationaux et internationaux."
+    "icon": "https://res.cloudinary.com/dzcarbymi/image/upload/v1769511372/Sans_titre_-_4_Plan_de_travail_1_copie_10_gvkfcd.png",
+    "title": "Masterclass Sectorielles",
+    "description": "Des sessions expertes pour aller en profondeur sur les enjeux clés : digitalisation, financement, supply chain, décarbonation… Le savoir au service de l’action."
   },
   {
-    "icon": "ri-user-search-line",
-    "title": "Talents & Compétences Industrielles",
-    "description": "Rencontrez des talents qualifiés et échangez sur les compétences industrielles."
+    "icon": "https://res.cloudinary.com/dzcarbymi/image/upload/v1769511372/Sans_titre_-_4_Plan_de_travail_1_copie_9_ukgp71.png",
+    "title": "CEO Closed-Door Sessions",
+    "description": "Des réunions exclusives à huis clos entre grands dirigeants pour échanger librement sur les problématiques industrielles, économiques et géostratégiques du moment. Confidentialité et impact."
   },
   {
-    "icon": "ri-bar-chart-line",
-    "title": "Projets Industriels & Politiques Publiques",
-    "description": "Découvrez les projets structurants et les politiques publiques industrielles."
+    "icon": "https://res.cloudinary.com/dzcarbymi/image/upload/v1769511372/Sans_titre_-_4_Plan_de_travail_1_copie_4_ofithf.png",
+    "title": "Réseautage & Médias",
+    "description": "Un dispositif complet pour connecter les acteurs, médiatiser les réussites, et créer les conditions de partenariats forts. Ici, chaque rencontre compte."
   }
 ]
