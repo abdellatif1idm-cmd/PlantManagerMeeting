@@ -26,11 +26,11 @@ const KeyFiguresCard = ({
         onViewportEnter={() => {
           setStartAnimation(true);
         }}
-        className="w-44 aspect-square bg-(--accent-11) p-1 rounded-xl"
+        className="w-44 aspect-square bg-(--accent-11) p-0.5  rounded-xl"
       >
-        <div className="w-full h-full relative flex flex-col justify-center items-center gap-y-2 bg-(--accent-6) rounded-lg p-4 shadow-md">
+        <div className="w-full h-full relative flex flex-col justify-center items-center gap-y-2 bg-(--color-background) rounded-xl p-4 shadow-md">
           <i
-            className={`${icon} absolute text-8xl text-(--accent-11) opacity-30`}
+            className={`${icon} absolute text-3xl right-1 top-1 text-(--accent-11)`}
           />
           <div className="text-4xl font-bold z-0 relative flex items-center">
             <CountUp

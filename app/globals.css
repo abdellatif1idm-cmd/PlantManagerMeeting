@@ -4,6 +4,8 @@
 @import "../styles/extradix.css";
 @import "../styles/utilities.css";
 @import "../styles/gallery.css";
+@import "../styles/transforms.css";
+
 
 @theme {
   --font-poppins: "--font-poppins";

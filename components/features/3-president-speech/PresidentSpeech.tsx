@@ -10,7 +10,6 @@ const PresidentSpeech = () => {
           <PresidentText />
           <PresidentImage />
         </div>
-        <BackgroundThreads className="-rotate-25" />
       </div>
     </section>
   );

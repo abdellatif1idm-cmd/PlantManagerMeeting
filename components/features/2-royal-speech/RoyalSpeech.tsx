@@ -1,4 +1,3 @@
-import BackgroundThreads from "@/components/ui/motions/BackgroundThreads";
 import RoyalImage from "./elements/RoyalImage";
 import RoyalText from "./elements/RoyalText";
 
@@ -10,7 +9,6 @@ const RoyalSpeech = () => {
           <RoyalImage />
           <RoyalText />
         </div>
-        <BackgroundThreads className="rotate-25" />
       </div>
     </section>
   );

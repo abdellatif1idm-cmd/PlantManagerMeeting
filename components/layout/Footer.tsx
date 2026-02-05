@@ -19,7 +19,7 @@ const footerData = {
       title: "Participation",
       links: [
         ...EventPlansListFr.map((el) => {
-          return { label: el.Label, path: el.path };
+          return { label: el.Label, href: el.href };
         }),
       ],
     },
@@ -34,9 +34,9 @@ const footerData = {
 const FooterLayout = ({
   brand = "",
   description = "",
-  socials = [],
-  sections = [],
-  contact = {},
+  socials,
+  sections,
+  contact,
 }: FooterData) => {
   return (
     <footer className="bg-(--accent-5)/50 text-white">
@@ -51,10 +51,10 @@ const FooterLayout = ({
 
             {/* Socials */}
             <div className="mt-6 flex gap-5">
-              {socials.map(({ label, path, icon }) => (
+              {socials?.map(({ label, href, icon }) => (
                 <Link
                   key={label}
-                  href={path}
+                  href={href}
                   aria-label={label}
                   target="_blank"
                   rel="noreferrer"
@@ -75,7 +75,7 @@ const FooterLayout = ({
                 <ul className="mt-4 space-y-3 text-sm opacity-80">
                   {section.links.map((link) => (
                     <li key={link.label}>
-                      <Link href={link.path} className="footer-link">
+                      <Link href={link.href} className="footer-link">
                         {link.label}
                       </Link>
                     </li>

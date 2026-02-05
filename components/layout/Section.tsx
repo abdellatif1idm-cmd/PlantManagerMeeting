@@ -13,12 +13,12 @@ interface SectionProps extends React.HTMLAttributes<HTMLElement> {
     | boolean;
 }
 
-export default function Section({
+const Section = ({
   children,
   title,
   withTexture = false,
   ...props
-}: SectionProps): JSX.Element {
+}: SectionProps): JSX.Element => {
   const textureEnabled =
     typeof withTexture === "boolean" ? withTexture : withTexture.enabled;
 
@@ -35,4 +35,6 @@ export default function Section({
       {textureEnabled && <BackgroundThreads className={textureClassName} />}
     </section>
   );
-}
+};
+
+export default React.memo(Section);

@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "title": "Personality of the Year",
+    "description": "Récompense une personnalité dont le leadership et l’impact ont marqué l’industrie.\nUne vision inspirante au service de l’innovation et du progrès.",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1770290866/award1_g6omdd.png"
+  },
+  {
+    "id": 2,
+    "title": "Exporter Award",
+    "description": "Distinction honorant l’excellence dans le développement à l’international.\nUne réussite exemplaire sur les marchés mondiaux.",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1770290966/award2_lkj75e.png"
+  },
+  {
+    "id": 3,
+    "title": "Investment Award",
+    "description": "Récompense les projets et acteurs ayant stimulé l’investissement stratégique.\nUn levier clé pour la croissance économique durable.",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1770290977/award3_iulhkk.png"
+  },
+  {
+    "id": 4,
+    "title": "Territory Award",
+    "description": "Met en lumière les initiatives valorisant le développement territorial.\nUn impact positif sur l’attractivité et la compétitivité locale.",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1770290984/award4_ujmbqf.png"
+  },
+  {
+    "id": 5,
+    "title": "Startup Award",
+    "description": "Récompense une startup innovante à fort potentiel de croissance.\nUne vision audacieuse portée par l’esprit entrepreneurial.",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1770290991/award5_ilmojw.png"
+  },
+  {
+    "id": 6,
+    "title": "Industrial Award",
+    "description": "Distinction dédiée à l’excellence industrielle et à la performance opérationnelle.\nUn modèle de savoir-faire et d’innovation.",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1770290999/award6_tblthg.png"
+  },
+  {
+    "id": 7,
+    "title": "Innovation Award",
+    "description": "Récompense les solutions novatrices transformant l’industrie.\nL’innovation au cœur de la compétitivité et du futur.",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1770291005/award7_n8kzzd.png"
+  },
+  {
+    "id": 8,
+    "title": "Decarbonation Award",
+    "description": "Met à l’honneur les initiatives de réduction de l’empreinte carbone.\nUn engagement fort pour la transition énergétique.",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1770291027/award8_u3w2eu.png"
+  },
+  {
+    "id": 9,
+    "title": "Brand Award",
+    "description": "Récompense une marque à l’identité forte et à l’influence reconnue.\nUne stratégie de marque créatrice de valeur.",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1770291081/award9_qgdmnf.png"
+  },
+  {
+    "id": 10,
+    "title": "Sustainability Award",
+    "description": "Distinction honorant les engagements en faveur du développement durable.\nPerformance économique et responsabilité environnementale réunies.",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1770291092/award10_ar4z8x.png"
+  },
+  {
+    "id": 11,
+    "title": "PMI Award",
+    "description": "Récompense l’excellence et la résilience des petites et moyennes industries.\nUn pilier essentiel du tissu économique.",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1770291113/award11_vaw4xg.png"
+  },
+  {
+    "id": 12,
+    "title": "Entrepreneur Award",
+    "description": "Met en avant un parcours entrepreneurial exemplaire.\nAudace, vision et création de valeur au cœur de la réussite.",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1770291126/award12_hazvu9.png"
+  },
+  {
+    "id": 13,
+    "title": "Industrial Architecture Award",
+    "description": "Récompense l’excellence en architecture industrielle.\nFonctionnalité, esthétique et innovation au service de l’industrie.",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1770291142/award13_z1juky.png"
+  }
+]

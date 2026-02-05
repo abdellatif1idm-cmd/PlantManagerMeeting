@@ -15,7 +15,7 @@ export default function ProgrammeCard({
 }: ProgrammeCardsProps) {
   return (
     <motion.article
-      className="w-full grid lg:grid-cols-[2fr_8fr] p-8 items-center gap-x-4 rounded-md bg-linear-to-r from-(--accent-5)/20 border-2  border-(--accent-10) to-(--accent-9) shadow-md relative z-30"
+      className="w-full grid lg:grid-cols-[2fr_8fr] p-8 items-center gap-x-4 rounded-md bg-linear-to-r from-(--accent-5)/20 border-[1.5px]  border-(--accent-10) to-transparent shadow-md relative z-30"
       initial={{
         opacity: 0,
         x: index % 2 === 0 ? -200 : 200,
@@ -27,9 +27,9 @@ export default function ProgrammeCard({
     >
       {/* Time */}
       <time
-        className="flex text-lg font-medium font-orbitron lg:justify-center lg:text-xl text-(--accent-12) text-shadow-[0px_2px_0px_var(--accent-1)]"
+        className="flex text-lg font-medium font-orbitron lg:justify-center lg:text-xl text-(--accent-11) text-shadow-[0px_2px_0px_var(--accent-1)]"
         dateTime={time}
-        itemProp="startDate"
+        itemProp="startTime"
       >
         {time}
       </time>
@@ -44,7 +44,7 @@ export default function ProgrammeCard({
         </h3>
 
         {subTitles?.length ? (
-          <ul className="flex flex-col list-none text-white gap-y-1 capitalize font-normal">
+          <ul className="flex flex-col font-normal text-white capitalize list-none gap-y-1">
             {subTitles?.map((subtitle, index) => (
               <li
                 key={index}
@@ -59,7 +59,7 @@ export default function ProgrammeCard({
         ) : null}
 
         {activities?.length ? (
-          <ul className="flex flex-col px-4 gap-y-1 font-normal">
+          <ul className="flex flex-col px-4 font-normal gap-y-1">
             {activities.map((activity, index) => (
               <li
                 key={index}

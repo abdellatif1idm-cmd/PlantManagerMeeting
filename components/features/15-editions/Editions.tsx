@@ -1,30 +1,43 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
 import editionsData from "@/data/fr/15-EventEditions.json";
 import EditionVideo from "./elements/EditionVideo";
 import EditionTopic from "./elements/EditionTopic";
 import EditionInfo from "./elements/EditionInfo";
 import EditionGallery from "./elements/EditionGallery";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 export default function Editions() {
-  const [currentEdition, setCurrentEdition] = useState(0);
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const foundedParams = searchParams?.get("e");
+
+  // Derive current edition directly from URL - no state needed!
+  const currentEdition = editionsData.find(
+    (item) => item.id === Number(foundedParams),
+  )
+    ? Number(foundedParams) - 1
+    : 0;
+
   const edition = editionsData[currentEdition];
 
   const goToNext = () => {
-    setCurrentEdition((prev) => (prev + 1) % editionsData.length);
+    const nextIndex = (currentEdition + 1) % editionsData.length;
+    router.push(`${pathname}?e=${nextIndex + 1}`, { scroll: false });
   };
 
   const goToPrevious = () => {
-    setCurrentEdition(
-      (prev) => (prev - 1 + editionsData.length) % editionsData.length
-    );
+    const prevIndex =
+      (currentEdition - 1 + editionsData.length) % editionsData.length;
+    router.push(`${pathname}?e=${prevIndex + 1}`, { scroll: false });
   };
 
   return (
-    <div className="p-8">
-      <div className="container mx-auto px-4 py-8 max-w-7xl">
+    <div className="p-2">
+      <div className="container mx-auto px-4 py-8">
         {/* Navigation Header */}
         <div className="flex items-center justify-between mb-8">
           <h1 className="text-3xl font-bold text-white">Éditions</h1>
@@ -65,7 +78,11 @@ export default function Editions() {
               {editionsData.map((ed, index) => (
                 <button
                   key={ed.id}
-                  onClick={() => setCurrentEdition(index)}
+                  onClick={() => {
+                    router.push(pathname + "?e=" + (index + 1), {
+                      scroll: false,
+                    });
+                  }}
                   className={`w-full text-left p-4 rounded-lg transition-all ${
                     currentEdition === index
                       ? "bg-(--accent-6) text-white shadow-lg"

@@ -10,7 +10,7 @@ const PlansGrid = () => {
           key={index}
           label={plan.Label}
           description={plan.description}
-          href={plan.path}
+          href={plan.href}
           image={plan.image}
           index={index}
         />

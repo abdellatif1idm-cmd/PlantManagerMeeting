@@ -6,7 +6,7 @@ const MobileMenuLinks = () => {
   return (
     <div className="w-full flex-1 flex flex-col gap-y-4">
       {NavbarList.map((lk) => (
-        <MobileMenuLink label={lk.label} href={lk.path} key={lk.label} />
+        <MobileMenuLink label={lk.label} href={lk.href} key={lk.label} />
       ))}
       <div className="mt-auto h-12">
         <MainCta device="mobile" />

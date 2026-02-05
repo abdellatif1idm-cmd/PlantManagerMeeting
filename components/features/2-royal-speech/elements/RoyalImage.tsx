@@ -11,12 +11,13 @@ const RoyalImage = () => {
         <Image
           src={EventRoyalSpeechListFr.EventRoyalSpeechImage}
           alt="Sa Majesté le Roi Mohammed VI"
-          className="object-cover w-full h-full pointer-events-none select-none"
+          className="object-cover w-full h-full pointer-events-none z-20 select-none"
           fill
           sizes="100%"
           priority
           decoding="async"
         />
+        <div className="absolute inset-0 border-2 translate-6 border-(--accent-9) pointer-events-none"/>
       </div>
     </MNBlurWrapper>
   );

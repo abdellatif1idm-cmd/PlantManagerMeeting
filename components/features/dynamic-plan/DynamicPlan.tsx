@@ -21,7 +21,7 @@ const DynamicPlan = ({ plan }: { plan: string }) => {
               <DynamicExtraPlansCard
                 key={item.name}
                 label={item.name}
-                href={item.path}
+                href={item.href}
                 description=""
                 image={item.image}
                 index={index}

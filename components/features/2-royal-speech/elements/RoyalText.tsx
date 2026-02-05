@@ -5,9 +5,9 @@ import React from "react";
 
 const RoyalText = () => {
   return (
-    <div className="w-full flex flex-col justify-around gap-y-4 h-full overflow-hidden">
+    <div className="w-full flex flex-col justify-around gap-y-4 h-full overflow-hidden relative">
       <MNBlurWrapper initialPosition="right">
-        <h2 className="font-semibold text-center lg:text-left text-2xl">
+        <h2 className="font-semibold text-center lg:text-left text-2xl border-l-2 border-(--accent-10) px-2">
           {EventRoyalSpeechListFr.EventRoyalSpeechTitle}
         </h2>
       </MNBlurWrapper>
@@ -23,6 +23,7 @@ const RoyalText = () => {
           Sa Majesté le Roi Mohammed VI
         </p>
       </MNBlurWrapper>
+      <i className="ri-double-quotes-l text-9xl absolute inset-0 opacity-20 translate-y-20"></i>
     </div>
   );
 };

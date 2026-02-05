@@ -2,13 +2,13 @@
 
 export type FooterSocial = {
   label: string;
-  path: string;
-  icon: string; // remix icon class e.g. "ri-facebook-fill"
+  href: string;
+  icon: string; 
 };
 
 export type FooterLink = {
   label: string;
-  path: string;
+  href: string;
 };
 
 export type FooterSection = {
