@@ -7,13 +7,13 @@
   },
   {
     "Label": "Intervenants",
-    "Value": "20",
+    "Value": "50",
     "Icon": "ri-mic-fill",
     "isPlus": true
   },
   {
     "Label": "Partenaires",
-    "Value": "50",
+    "Value": "250",
     "Icon": "ri-shake-hands-fill",
     "isPlus": true
   },

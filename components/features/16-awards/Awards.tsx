@@ -4,6 +4,8 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import awardsDataFr from "@/data/fr/16-EventAwards.json";
 import AwardsGallery from "./elements/AwardsGallery";
+import { Button } from "@radix-ui/themes";
+import Link from "next/link";
 
 /* -------------------- Scroll Hook -------------------- */
 const useScrollY = () => {
@@ -151,7 +153,7 @@ const AwardsOverview = () => {
           />
         </div>
       </div>
-      <div className="lg:col-span-2 px-2 size-full flex items-center">
+      <div className="lg:col-span-2 px-2 size-full flex flex-col justify-center items-center lg:items-start">
         <p className="text-lg text-center lg:text-start">
           Les <span className="text-[#DBBD7B] font-medium">IMD Awards</span>{" "}
           récompensent l’excellence dans le monde industriel, en célébrant les
@@ -160,6 +162,14 @@ const AwardsOverview = () => {
           annuelle est l’un des moments forts de l’événement, rassemblant le
           meilleur du secteur.
         </p>
+
+        <Link
+          href={
+            "https://docs.google.com/forms/d/e/1FAIpQLSdtETTx_HYeDkME3stSL71z2A0XYaEuzv8CkQii6n7WC7RQLg/viewform?usp=header"
+          }
+        >
+          <Button className="mt-2!">Postuler</Button>
+        </Link>
       </div>
     </section>
   );
@@ -171,10 +181,7 @@ export default function Awards() {
 
   return (
     <main className="text-white">
-      <AwardsOverview />
-      <div className="p-4">
-        <AwardsGallery />
-      </div>
+      <AwardsOverview />{" "}
       {awardsDataFr.map((award, index) => (
         <AwardSection
           key={award.id}
@@ -183,6 +190,9 @@ export default function Awards() {
           scrollY={scrollY}
         />
       ))}
+      <div className="p-4">
+        <AwardsGallery />
+      </div>
     </main>
   );
 }

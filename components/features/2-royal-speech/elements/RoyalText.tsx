@@ -1,7 +1,6 @@
 import MNBlurWrapper from "@/components/ui/motions/MNBlurWrapper";
 import EventRoyalSpeechListFr from "@/data/fr/2-EventRoyalSpeech.json";
 
-import React from "react";
 
 const RoyalText = () => {
   return (
@@ -15,12 +14,6 @@ const RoyalText = () => {
       <MNBlurWrapper initialPosition="right" delay={0.1}>
         <p className="w-full lg:w-5/6 text-sm text-justify opacity-80">
           {EventRoyalSpeechListFr.EventRoyalSpeechText}
-        </p>
-      </MNBlurWrapper>
-
-      <MNBlurWrapper initialPosition="right" delay={0.2}>
-        <p className="w-full lg:w-5/6 font-sacramento opacity-60 text-sm text-right mt-4">
-          Sa Majesté le Roi Mohammed VI
         </p>
       </MNBlurWrapper>
       <i className="ri-double-quotes-l text-9xl absolute inset-0 opacity-20 translate-y-20"></i>
