@@ -9,8 +9,8 @@
   },
   {
     "Label": "Ticket Vip",
-    "slug": "networking",
-    "href": "/participate/networking",
+    "slug": "vip",
+    "href": "/participate/vip",
     "price":"12 000",
     "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767948272/3X7A6656_bdxmig.jpg",
     "description": "Profitez d’un espace privilégié pour rencontrer des professionnels, échanger des idées et créer de nouvelles opportunités de collaboration."

@@ -9,7 +9,7 @@ const CountDown = dynamic(() => import("react-countdown"), {
 
 const HeroCountdown = () => {
   return (
-    <div className="w-full flex items-center justify-center lg:justify-end z-10">
+    <div className="w-full flex items-center justify-center z-10">
       <div className="w-5/6 lg:w-1/2 pt-4">
         <CountDown
           className="z-10!"

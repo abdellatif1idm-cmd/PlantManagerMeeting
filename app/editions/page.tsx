@@ -1,4 +1,4 @@
-import EditionsPage from "@/pages/EditionsPage";
+import EditionsPage from "@/screens/EditionsPage";
 import React from "react";
 
 export default function page() {

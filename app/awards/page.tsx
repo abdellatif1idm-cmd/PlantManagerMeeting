@@ -1,4 +1,4 @@
-import AwardsPage from '@/pages/AwardsPage'
+import AwardsPage from '@/screens/AwardsPage'
 import React from 'react'
 
 export default function page() {

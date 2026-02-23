@@ -1,4 +1,4 @@
-import DynamicPlanPage from "@/pages/DynamicPlanPage";
+import DynamicPlanPage from "@/screens/DynamicPlanPage";
 import { notFound } from "next/navigation";
 
 export default async function DynamicPlan({
@@ -7,7 +7,7 @@ export default async function DynamicPlan({
   params: Promise<{ plan: string }>;
 }) {
   const { plan } = await params;
-  const allowedTypes = ["networking", "stand"] as const;
+  const allowedTypes = ["vip", "stand"] as const;
 
   if (!(allowedTypes as readonly string[]).includes(plan)) {
     notFound();

@@ -21,7 +21,7 @@ const KeyFiguresCard = ({
 }: KeyFiguresCardProps) => {
   const [startAnimation, setStartAnimation] = useState(false);
   return (
-    <MNBlurWrapper initialPosition="bottom" delay={index / 5}>
+    <MNBlurWrapper initialPosition="center" delay={index / 5}>
       <motion.div
         onViewportEnter={() => {
           setStartAnimation(true);

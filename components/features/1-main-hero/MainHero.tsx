@@ -9,7 +9,7 @@ import HeroPathTexture from "./elements/HeroPathTexture";
 const MainHero = () => {
   return (
     <section className="w-full relative">
-      <div className="container mx-auto min-h-dvh lg:min-h-120 2xl:min-h-dvh px-4 lg:px-10 flex flex-col justify-center items-center lg:items-start gap-y-4 relative z-10">
+      <div className="container mx-auto min-h-dvh lg:min-h-120 2xl:min-h-dvh px-4 lg:px-10 flex flex-col justify-center items-center gap-y-4 relative z-10">
         <div className="py-6" />
         <HeroDatePlace />
         <HeroTopic />

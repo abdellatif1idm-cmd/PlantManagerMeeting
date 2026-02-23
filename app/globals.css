@@ -6,7 +6,6 @@
 @import "../styles/gallery.css";
 @import "../styles/transforms.css";
 
-
 @theme {
   --font-poppins: "--font-poppins";
   --font-montserrat: "--font-montserrat";
@@ -25,3 +24,19 @@ html {
 * {
   @apply font-montserrat!;
 }
+
+.scrollbar::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+.scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--accent-10);
+  border-radius: 9999px;
+}
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: white;
+}
+

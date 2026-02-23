@@ -1,4 +1,4 @@
-import PlansPage from "@/pages/PlansPage";
+import PlansPage from "@/screens/PlansPage";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

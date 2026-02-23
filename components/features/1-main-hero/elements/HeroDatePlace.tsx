@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const HeroDatePlace = () => {
   return (
-    <MNBlurWrapper initialPosition="left">
+    <MNBlurWrapper initialPosition="bottom">
       <div className="w-fit flex items-center px-2 h-8 gap-x-4 rounded-full bg-(--accent-10)/10">
         <HeroDate />
         <HeroPlace />

@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import ExtraPlanPage from "@/pages/ExtraPlanPage";
+import ExtraPlanPage from "@/screens/ExtraPlanPage";
 
 export default async function ExtraPlan({
   params,

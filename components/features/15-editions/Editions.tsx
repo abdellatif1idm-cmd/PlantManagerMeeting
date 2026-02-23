@@ -7,6 +7,7 @@ import EditionTopic from "./elements/EditionTopic";
 import EditionInfo from "./elements/EditionInfo";
 import EditionGallery from "./elements/EditionGallery";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { ScrollArea } from "@radix-ui/themes";
 
 export default function Editions() {
   const searchParams = useSearchParams();
@@ -63,7 +64,7 @@ export default function Editions() {
         </div>
 
         {/* Main Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="w-full items-start grid grid-cols-1 lg:grid-cols-3 lg:max-h-140 gap-6">
           {/* Video Section */}
           <div className="lg:col-span-2">
             <EditionVideo edition={edition} />
@@ -74,55 +75,55 @@ export default function Editions() {
             <h2 className="text-xl font-semibold text-white mb-4">
               Toutes les éditions
             </h2>
-            <div className="space-y-3 max-h-150 overflow-y-auto pr-2">
-              {editionsData.map((ed, index) => (
-                <button
-                  key={ed.id}
-                  onClick={() => {
-                    router.push(pathname + "?e=" + (index + 1), {
-                      scroll: false,
-                    });
-                  }}
-                  className={`w-full text-left p-4 rounded-lg transition-all ${
-                    currentEdition === index
-                      ? "bg-(--accent-6) text-white shadow-lg"
-                      : "bg-(--gray-4)/50 hover:bg-(--gray-4)/90"
-                  }`}
-                >
-                  <div className="flex items-start gap-3">
-                    <div
-                      className={`shrink-0 w-10 h-10 rounded-lg flex items-center justify-center font-bold text-lg ${
-                        currentEdition === index
-                          ? "bg-(--accent-8)"
-                          : "bg-(--accent-3)/50"
-                      }`}
-                    >
-                      {ed.id}
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <h3
-                        className={`font-semibold text-sm mb-1 truncate ${
+              <div className="w-full flex flex-col scrollbar lg:max-h-128 pb-12 mask-b-from-95% mask-b-to-100% gap-y-2 overflow-y-scroll">
+                {editionsData.map((ed, index) => (
+                  <button
+                    key={ed.id}
+                    onClick={() => {
+                      router.push(pathname + "?e=" + (index + 1), {
+                        scroll: false,
+                      });
+                    }}
+                    className={`w-full text-left p-4 rounded-lg transition-all ${
+                      currentEdition === index
+                        ? "bg-(--accent-6) text-white shadow-lg"
+                        : "bg-(--gray-4)/50 hover:bg-(--gray-4)/90"
+                    }`}
+                  >
+                    <div className="flex items-start gap-3">
+                      <div
+                        className={`shrink-0 w-10 h-10 rounded-lg flex items-center justify-center font-bold text-lg ${
                           currentEdition === index
-                            ? "opacity-100"
-                            : "opacity-80"
+                            ? "bg-(--accent-8)"
+                            : "bg-(--accent-3)/50"
                         }`}
                       >
-                        {ed.topic}
-                      </h3>
-                      <p
-                        className={`text-xs ${
-                          currentEdition === index
-                            ? "opacity-100"
-                            : "opacity-80"
-                        }`}
-                      >
-                        {ed.date}
-                      </p>
+                        {ed.id}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h3
+                          className={`font-semibold text-sm mb-1 truncate ${
+                            currentEdition === index
+                              ? "opacity-100"
+                              : "opacity-80"
+                          }`}
+                        >
+                          {ed.topic}
+                        </h3>
+                        <p
+                          className={`text-xs ${
+                            currentEdition === index
+                              ? "opacity-100"
+                              : "opacity-80"
+                          }`}
+                        >
+                          {ed.date}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </button>
-              ))}
-            </div>
+                  </button>
+                ))}{" "}
+              </div>
           </div>
         </div>
 

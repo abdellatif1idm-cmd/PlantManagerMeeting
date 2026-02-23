@@ -1,0 +1,56 @@
+{
+  "idm_events": [
+    {
+      "id": 1,
+      "title": "Les Matinées de l'Industrie Maroc/Espagne",
+      "edition": {
+        "number": "1",
+        "suffix": "ère"
+      },
+      "imageUrl": "https://res.cloudinary.com/dzcarbymi/image/upload/v1770800168/1200_630_mar-esp_khb4id.png",
+      "website": {
+        "active": false,
+        "url": ""
+      }
+    },
+    {
+      "id": 2,
+      "title": "Oriental Meeting Days",
+      "edition": {
+        "number": "1",
+        "suffix": "ère"
+      },
+      "imageUrl": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758820094/background_wpb3dw.jpg",
+      "website": {
+        "active": false,
+        "url": ""
+      }
+    },
+    {
+      "id": 3,
+      "title": "AgriWater 4.0",
+      "edition": {
+        "number": "1",
+        "suffix": "ère"
+      },
+      "imageUrl": "https://res.cloudinary.com/dzcarbymi/image/upload/v1770800167/1200_630_agriwater_vs6acj.png",
+      "website": {
+        "active": false,
+        "url": ""
+      }
+    },
+    {
+      "id": 4,
+      "title": "Forum de l'Emploi et la Compétence",
+      "edition": {
+        "number": "2",
+        "suffix": "ème"
+      },
+      "imageUrl": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758820203/imgi_15_le-carre-dor-salle-Esplanade_pz0gwa.png",
+      "website": {
+        "active": false,
+        "url": ""
+      }
+    }
+  ]
+}

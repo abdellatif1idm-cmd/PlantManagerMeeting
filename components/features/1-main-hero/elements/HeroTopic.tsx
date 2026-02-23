@@ -3,7 +3,7 @@ import EventBaseListFr from "@/data/fr/1-EventBase.json";
 
 const HeroTopic = () => {
   return (
-    <h1 className="text-4xl lg:text-5xl text-center lg:text-left lg:w-1/2">
+    <h1 className="text-4xl lg:text-5xl text-center lg:w-1/2">
       <MNBlurWrapper className="inline-block" delay={0.1}>
         <span className="inline-block font-bold mb-2">
           {EventBaseListFr.EventSubject}

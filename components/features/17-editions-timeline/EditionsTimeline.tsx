@@ -37,9 +37,7 @@ export default function EditionsTimeline() {
                         {item.topic}
                       </span>
                       <p className="mt-2 text-sm leading-relaxed text-white/70">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
+                        {item.description}
                       </p>
                     </Link>
                   </li>

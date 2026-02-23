@@ -1,4 +1,4 @@
-import PressPage from '@/pages/PressPage'
+import PressPage from '@/screens/PressPage'
 import React from 'react'
 
 export default function Press() {

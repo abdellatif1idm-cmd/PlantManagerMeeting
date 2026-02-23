@@ -1,4 +1,4 @@
-import DynamicPackPage from "@/pages/DynamicPackPage";
+import DynamicPackPage from "@/screens/DynamicPackPage";
 import { notFound } from "next/navigation";
 import EventPacksListFR from "@/data/fr/12-EventPacks.json"
 
