@@ -1,6 +1,6 @@
 import React, { JSX } from "react";
 import MNSectionTitle from "../ui/motions/MNSectionTitle";
-import BackgroundThreads from "../ui/motions/BackgroundThreads";
+// import BackgroundThreads from "../ui/motions/BackgroundThreads";
 
 interface SectionProps extends React.HTMLAttributes<HTMLElement> {
   title?: string;
@@ -32,7 +32,7 @@ const Section = ({
         {children}
       </div>
 
-      {textureEnabled && <BackgroundThreads className={textureClassName} />}
+      {/* {textureEnabled && <BackgroundThreads className={textureClassName} />} */}
     </section>
   );
 };

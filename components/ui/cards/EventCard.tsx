@@ -1,4 +1,3 @@
-import { Badge } from "@radix-ui/themes";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,66 +14,81 @@ export type EventCardProps = {
   };
 };
 
-export default function EventCard({
-  title,
-  edition,
-  imageUrl,
-  website,
-}: EventCardProps) {
+export default function EventCard({ title, edition, imageUrl, website }: EventCardProps) {
   return (
-    <div className="w-full relative aspect-6/5 overflow-hidden rounded-xl bg-white">
+    <div className="group relative w-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
+
       {/* Banner */}
-      <div className="relative w-full aspect-video">
+      <div className="relative w-full aspect-video overflow-hidden">
         <Image
           src={imageUrl}
           alt={title}
           fill
-          className="size-full object-cover inset-0 pointer-events-none select-none"
-          // Responsive sizes for different breakpoints
-          sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, (max-width: 1536px) 25vw, 20vw"
-          // Performance optimizations
-          //   priority={shouldPrioritize}
-          //   loading={shouldPrioritize ? "eager" : "lazy"}
-          // Image quality and format optimization
-          quality={85} // Good balance between quality and file size
-          // Performance hints
+          sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+          quality={85}
           decoding="async"
-          // Prevent layout shift
-          // Additional optimization for modern formats
-          unoptimized={false}
+          className="object-cover pointer-events-none select-none transition-transform duration-500 group-hover:scale-[1.03]"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+      </div>
 
-        {/* Edition Badge */}
-        <Badge
-          size={"2"}
-          variant="outline"
-          radius="large"
-          className="absolute backdrop-blur-2xl right-2 shadow-none! top-2 px-3 py-1 uppercase tracking-wide"
+      {/* Footer */}
+      <div className="flex" style={{ height: "72px" }}>
+
+        {/* Title */}
+        <div className="flex flex-1 items-center px-4 bg-white">
+          <h3 className="text-sm font-semibold leading-snug text-gray-900 line-clamp-2">{title}</h3>
+        </div>
+
+        {/* Edition badge - adapté aux couleurs du site */}
+        <div
+          className="flex w-1/4 flex-col items-center justify-center gap-1"
+          style={{ background: "linear-gradient(135deg, #1a2a3a 0%, #2a3f4f 50%, #1a2a3a 100%)" }}
         >
-          <div className="flex flex-col items-center">
-            <h4 className="text-base relative text-white font-semibold">
-              <span>{edition.number}</span>
-
-              <span className="text-[8px] lowercase absolute font-normal translate-x-0.5">{edition.suffix}</span>
-            </h4>
-            <span className="text-xs text-white">Édition</span>
+          <div className="flex items-start leading-none">
+            <span
+              className="text-2xl font-bold leading-none"
+              style={{
+                fontFamily: "'Playfair Display', 'Didot', 'Georgia', serif",
+                background: "linear-gradient(180deg, var(--blue-11) 0%, var(--blue-9) 50%, var(--blue-11) 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              {edition.number}
+            </span>
+            <sup
+              className="text-[9px] font-light mt-1 lowercase"
+              style={{ color: "var(--blue-9)" }}
+            >
+              {edition.suffix}
+            </sup>
           </div>
-        </Badge>
+          <div
+            className="w-6 my-0.5"
+            style={{ height: "0.5px", background: "linear-gradient(90deg, transparent, var(--blue-8), transparent)" }}
+          />
+          <span
+            className="text-[7px] uppercase tracking-[0.3em]"
+            style={{
+              fontFamily: "'Cormorant Garamond', 'Garamond', serif",
+              color: "var(--blue-10)",
+              letterSpacing: "0.3em",
+            }}
+          >
+            Édition
+          </span>
+        </div>
       </div>
 
-      {/* Content */}
-      <div className="p-4">
-        <h3 className="text-lg font-bold leading-tight text-black">{title}</h3>
-      </div>
-
+      {/* Visit link */}
       {website.active && (
         <Link
           href={website.url}
           target="_blank"
-          className="flex items-center justify-center font-medium px-2  gap-x-1 absolute right-1 bottom-1 rounded-xl border border-black text-black hover:bg-black hover:text-white transition-all"
+          className="absolute right-2 bottom-[76px] flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-medium border border-white/60 text-white hover:bg-white hover:text-black transition-all duration-200"
         >
-          <span>visiter</span>
-          <i className="ri-arrow-right-up-line"></i>
+          Visiter <i className="ri-arrow-right-up-line" />
         </Link>
       )}
     </div>

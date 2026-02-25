@@ -1,0 +1,42 @@
+{
+  "EventNewsTitle": "Actualités industrielles",
+  "EventNewsDescription": "Les dernières innovations et avancées technologiques du secteur",
+  "EventNewsList": [
+    {
+      "id": 1,
+      "category": "Recherche & Transfert de Technologie",
+      "date": "24 février 2026",
+      "title": "Un état excité à durée de vie exceptionnellement longue",
+      "content": "Les travaux récents du Physikalisch-Technische Bundesanstalt (PTB) ouvrent la voie à une nouvelle génération de technologies quantiques. Cette avancée pourrait améliorer considérablement la précision des systèmes de mesure du temps et de la fréquence dans l'industrie de haute technologie.",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767956262/quantum-tech_xnfjbo.webp",
+      "link": "/actualites/recherche-quantique"
+    },
+    {
+      "id": 2,
+      "category": "IIoT, Sans fil & Cloud",
+      "date": "24 février 2026",
+      "title": "De la recherche fondamentale à l'application concrète",
+      "content": "Grâce à une stratégie clairement orientée vers le transfert technologique et à une collaboration étroite avec l'industrie, la normalisation et les initiatives nationales liées à la 6G, de nouvelles solutions intelligentes émergent pour accélérer la transformation numérique des entreprises.",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767956262/iiot-industry_xnfjbo.webp",
+      "link": "/actualites/iiot-6g"
+    },
+    {
+      "id": 3,
+      "category": "Technologies d'entraînement & des fluides",
+      "date": "23 février 2026",
+      "title": "6ᵉ Conférence internationale sur les roulements",
+      "content": "Discrets mais essentiels, les roulements jouent un rôle central dans les systèmes mécaniques modernes. Les 17 et 18 juin 2026, la conférence BEARING WORLD réunira des experts internationaux pour présenter les innovations majeures du secteur.",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767956262/bearings-industry_xnfjbo.webp",
+      "link": "/actualites/bearing-world"
+    },
+    {
+      "id": 4,
+      "category": "Sécurité IT/OT",
+      "date": "18 février 2026",
+      "title": "La cybersécurité industrielle : l'IA devient incontournable",
+      "content": "Dans un contexte géopolitique en mutation rapide, les exigences en matière de cybersécurité industrielle ne cessent de croître. L'intelligence artificielle s'impose désormais comme un levier stratégique pour anticiper, détecter et neutraliser les menaces de plus en plus sophistiquées.",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767956262/cybersecurity-industry_xnfjbo.webp",
+      "link": "/actualites/cybersecurite-ia"
+    }
+  ]
+}

@@ -1,26 +1,27 @@
 [
   {
-    "Label": "Visiteurs et professionnels",
-    "Value": "3000",
-    "Icon": "ri-group-fill",
+    "Label": "Décideurs industriels attendus",
+    "Value": "300",
+    "Icon": "ri-user-star-fill",
     "isPlus": true
   },
   {
-    "Label": "Intervenants",
-    "Value": "50",
+    "Label": "Journée 100% business",
+    "Value": "1",
+    "Icon": "ri-calendar-check-fill",
+    "isPlus": false,
+    "suffix": "journée"
+  },
+  {
+    "Label": "Speakers de haut niveau",
+    "Value": "30",
     "Icon": "ri-mic-fill",
     "isPlus": true
   },
   {
-    "Label": "Partenaires",
-    "Value": "250",
+    "Label": "Partenaires industriels",
+    "Value": "20",
     "Icon": "ri-shake-hands-fill",
-    "isPlus": true
-  },
-  {
-    "Label": "Secteurs Stratégiques",
-    "Value": "10",
-    "Icon": "ri-bar-chart-grouped-fill",
     "isPlus": true
   }
 ]

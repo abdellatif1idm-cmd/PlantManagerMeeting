@@ -5,25 +5,32 @@ import PresidentSpeech from "@/components/features/3-president-speech/PresidentS
 import KeyFigures from "@/components/features/4-key-figures/KeyFigures";
 import Benefits from "@/components/features/5-benefits/Benefits";
 import Gallery from "@/components/features/7-gallery/Gallery";
-// import Speakers from "@/components/features/8-speakers/Speakers";
-// import ClientSpeakerDetails from "@/components/features/8-speakers/element/ClientSpeakerDetails";
+import Speakers from "@/components/features/8-speakers/Speakers";
+import ClientSpeakerDetails from "@/components/features/8-speakers/element/ClientSpeakerDetails";
 import Sponsors from "@/components/features/9-sponsors/Sponsors";
 // import Calendars from "@/components/features/10-calendar/Calendars";
 import ScrollToTop from "@/components/ui/controls/ScrollToTop";
 import EditionsTimeline from "@/components/features/17-editions-timeline/EditionsTimeline";
 import OurEvents from "@/components/features/our-events/OurEvents";
+import WhyParticipate from "@/components/features/2-2-event-why-participate/WhyParticipate";
+import IndustryNews from "@/components/features/4-4-industry-news/IndustryNews";
+// import Speakers from "@/components/features/3-3-speakers/Speakers";
 
 export default function HomePage() {
+    console.log('WhyParticipate in render:', WhyParticipate);
+
   return (
     <Main>
       <MainHero />
-      <RoyalSpeech />
-      <PresidentSpeech />
-      <KeyFigures />
-      <Benefits />
-      <EditionsTimeline/>
-      <Gallery />
       {/* <Speakers /> */}
+      {/* <IndustryNews /> */}
+      <KeyFigures />
+      <WhyParticipate />
+
+      {/* <Benefits /> */}
+      {/* <EditionsTimeline/> */}
+      {/* <Gallery /> */}
+      <Speakers />
       {/* <ClientSpeakerDetails /> */}
       <Sponsors />
       {/* <Calendars /> */}

@@ -1,26 +1,8 @@
 [
   { "label": "Accueil", "href": "/" },
 
-  {
-    "label": "Éditions",
-    "href": "/editions",
-    "extra": {
-      "enabled": true,
-      "items": [
-        { "label": "2017", "href": "1" },
-        { "label": "2018", "href": "2" },
-        { "label": "2019", "href": "3" },
-        { "label": "2022", "href": "4" },
-        { "label": "2023", "href": "5" },
-        { "label": "2024", "href": "6" },
-        { "label": "2025", "href": "7" }
-      ]
-    }
-  },
-  {
-    "label": "Awards",
-    "href": "/awards"
-  },
+
+
   {
     "label": "Programme",
     "href": "/programme"

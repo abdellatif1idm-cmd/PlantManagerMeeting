@@ -1,0 +1,46 @@
+{
+  "EventSpeakersTitle": "Nos intervenants",
+  "EventSpeakersDescription": "Des experts de l'industrie partagent leur expertise terrain",
+  "EventSpeakersList": [
+    {
+      "id": 1,
+      "name": "Hicham RAHIOUI",
+      "function": "Président",
+      "company": "Industrycom Group",
+      "bio": "Expert en stratégie industrielle et développement économique, il accompagne les transformations majeures du secteur industriel au Maroc.",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758731065/Hicham_RAHIOUI_al4qy1.jpg",
+      "industry": ["Industrie", "Média"],
+      "country": "Maroc"
+    },
+    {
+      "id": 2,
+      "name": "Fatima ZAHRA",
+      "function": "Directrice Industrielle",
+      "company": "Groupe Automobile",
+      "bio": "Spécialiste en lean manufacturing et excellence opérationnelle avec plus de 15 ans d'expérience dans l'industrie automobile.",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758731066/fatima_zahra_sample.jpg",
+      "industry": ["Automobile", "Industrie 4.0"],
+      "country": "Maroc"
+    },
+    {
+      "id": 3,
+      "name": "Jean DUPONT",
+      "function": "Directeur Industriel",
+      "company": "Aéronautique International",
+      "bio": "Leader en transformation digitale et maintenance prédictive, il a piloté plusieurs projets d'usines du futur en Europe et en Afrique.",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758731067/jean_dupont_sample.jpg",
+      "industry": ["Aéronautique", "Digitalisation"],
+      "country": "France"
+    },
+    {
+      "id": 4,
+      "name": "Amina BENJELLOUN",
+      "function": "Responsable HSE",
+      "company": "Groupe Énergétique",
+      "bio": "Experte en sécurité industrielle et décarbonation, elle œuvre pour une industrie plus durable et responsable.",
+      "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758731068/amina_benjelloun_sample.jpg",
+      "industry": ["Énergie", "HSE"],
+      "country": "Maroc"
+    }
+  ]
+}

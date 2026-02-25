@@ -1,0 +1,45 @@
+{
+  "title": "Pourquoi participer ?",
+  "benefits": [
+    {
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M8 10v11M12 10v11M16 10v11M20 10v11\"/></svg>",
+      "title": "Conférences Stratégiques",
+      "text": "Des panels de haut niveau réunissant Plant Managers, directeurs industriels et experts terrain pour décrypter les enjeux de l'excellence opérationnelle, de l'industrie 4.0 et de la performance durable."
+    },
+    {
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"9\" y=\"2\" width=\"6\" height=\"12\" rx=\"3\"/><path d=\"M5 10a7 7 0 0014 0M12 19v3M9 22h6\"/></svg>",
+      "title": "Keynote Internationale",
+      "text": "Une intervention inspirante portée par un leader industriel de référence, pour éclairer le nouveau rôle stratégique du Plant Manager dans un environnement global en mutation."
+    },
+    {
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z\"/></svg>",
+      "title": "Panels Opérationnels",
+      "text": "Des discussions concrètes centrées sur les réalités des sites industriels : Lean manufacturing, maintenance prédictive, digitalisation, décarbonation et résilience des chaînes de valeur."
+    },
+    {
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M23 4v6h-6M1 20v-6h6\"/><path d=\"M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15\"/></svg>",
+      "title": "Retours d'Expérience Terrain",
+      "text": "Des success stories présentées par des directeurs d'usines partageant leurs défis, leurs solutions et leurs résultats mesurables."
+    },
+    {
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z\"/></svg>",
+      "title": "Ateliers & Tables Rondes",
+      "text": "Des sessions interactives en petit comité favorisant l'échange direct entre décideurs autour de problématiques industrielles spécifiques."
+    },
+    {
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09zM12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z\"/><path d=\"M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5\"/></svg>",
+      "title": "Pitchs de Solutions Industrielles",
+      "text": "Une sélection rigoureuse de fournisseurs innovants présentant des technologies et solutions concrètes pour optimiser la performance des usines."
+    },
+    {
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3\"/></svg>",
+      "title": "Networking Dinner & Business Cocktail",
+      "text": "Un moment privilégié entre pairs pour renforcer les connexions stratégiques dans un cadre élégant et confidentiel."
+    },
+    {
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"2\" fill=\"currentColor\"/><path d=\"M16.24 7.76a6 6 0 010 8.49M7.76 16.24a6 6 0 010-8.49M20.49 3.51a12 12 0 010 16.97M3.51 20.49a12 12 0 010-16.97\"/></svg>",
+      "title": "Live Media Studio",
+      "text": "Un espace média dédié aux interviews exclusives et à la valorisation des leaders industriels, amplifiant l'impact de l'événement à l'échelle nationale et internationale."
+    }
+  ]
+}

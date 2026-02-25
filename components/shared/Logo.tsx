@@ -11,7 +11,7 @@ export default function Logo() {
       <Link href={"/"}>
         <Image
           src={
-            "https://res.cloudinary.com/dzcarbymi/image/upload/v1770713820/unnamed_gmwrdn.webp"
+            "https://res.cloudinary.com/dzcarbymi/image/upload/v1771929710/pmm_white_atlrua.png"
           }
           alt=""
           fill
