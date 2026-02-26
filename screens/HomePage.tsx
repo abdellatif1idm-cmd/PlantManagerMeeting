@@ -24,8 +24,10 @@ export default function HomePage() {
       <MainHero />
       {/* <Speakers /> */}
       {/* <IndustryNews /> */}
+      <RoyalSpeech />
       <KeyFigures />
       <WhyParticipate />
+ 
 
       {/* <Benefits /> */}
       {/* <EditionsTimeline/> */}

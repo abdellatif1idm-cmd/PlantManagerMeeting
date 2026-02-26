@@ -18,6 +18,7 @@ import Footer from "@/components/layout/Footer";
 import MobileMenu from "@/components/ui/menus/MobileMenu";
 import EventBase from "@/data/fr/1-EventBase.json";
 import { Toaster } from "react-hot-toast";
+import favicon from '../public/images/favicon/favicon-512.png'
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],

@@ -4,7 +4,7 @@ import { motion, useInView } from 'motion/react';
 import whyData from '@/data/fr/2-2-Event-why-participate.json';
 
 interface Benefit {
-  icon: string; // raw SVG string from JSON
+  icon: string;
   title: string;
   text: string;
 }
@@ -14,9 +14,6 @@ interface WhyData {
   benefits: Benefit[];
 }
 
-// ─────────────────────────────────────────────────────────────────
-// FLIP CARD
-// ─────────────────────────────────────────────────────────────────
 function FlipCard({ benefit, index, isVisible }: {
   benefit: Benefit;
   index: number;
@@ -39,7 +36,7 @@ function FlipCard({ benefit, index, isVisible }: {
       className="relative w-full"
       style={{ zIndex: phase === 'out' || phase === 'in' ? 50 : 1 }}
     >
-      {/* BACK — transparent, rotates away */}
+      {/* BACK */}
       {phase !== 'in' && phase !== 'done' && (
         <motion.div
           className="absolute inset-0 rounded-2xl"
@@ -52,10 +49,10 @@ function FlipCard({ benefit, index, isVisible }: {
         />
       )}
 
-      {/* FRONT — content rotates in */}
+      {/* FRONT */}
       {(phase === 'in' || phase === 'done') && (
         <motion.div
-          className="rounded-2xl flex flex-col items-center justify-between p-8 relative overflow-hidden"
+          className="rounded-2xl flex flex-col items-center p-8 relative overflow-hidden"
           style={{ minHeight: 340 }}
           animate={{ rotateY: phase === 'in' ? [-90, 0] : 0 }}
           initial={{ rotateY: -90 }}
@@ -66,62 +63,63 @@ function FlipCard({ benefit, index, isVisible }: {
               : {}
           }
         >
-          {/* Subtle glow */}
-          <div
-            className="absolute inset-0 pointer-events-none rounded-2xl"
-            style={{
-              background:
-                'radial-gradient(ellipse at 50% 25%, transparent 65%)',
-            }}
-          />
-
-          {/* Icon — SVG from JSON, rendered with accent color */}
+          {/* ① Icon — fixed 64px, marginBottom fixe → ligne TOUJOURS à 24px sous l'icône */}
           <motion.div
             className="flex items-center justify-center relative"
-           style={{
-              width: 96,
-              height: 96,
+            style={{
+              width: 64,
+              height: 64,
+              flexShrink: 0,
+              marginBottom: 24,
               color: 'var(--accent-9)',
               filter: 'drop-shadow(0 0 16px color-mix(in srgb, var(--accent-9) 60%, transparent))',
             }}
             animate={{ scale: [0.2, 1.25, 1], opacity: [0, 1, 1] }}
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
             dangerouslySetInnerHTML={{
-              __html: benefit.icon
-                // inject Tailwind-equivalent size via style attribute on the svg
-                .replace('<svg ', '<svg width="64" height="64" style="display:block;" '),
+              __html: benefit.icon.replace('<svg ', '<svg width="64" height="64" style="display:block;" '),
             }}
           />
 
-          {/* Text block */}
-          <div className="flex flex-col items-center text-center gap-3 w-full">
-            <motion.div
-              className="rounded-full"
-              style={{ background: 'var(--accent-9)', height: 2, width: 48 }}
-              animate={{ scaleX: [0, 1] }}
-              transition={{ duration: 0.4, delay: 0.15, ease: 'easeOut' }}
-            />
-            <motion.h3
-              className="font-bold text-xl leading-snug"
-              style={{ color: 'rgba(255,255,255,0.97)' }}
-              animate={{ opacity: [0, 1], y: [8, 0] }}
-              transition={{ duration: 0.35, delay: 0.18 }}
-            >
-              {benefit.title}
-            </motion.h3>
-            <motion.p
-              className="text-sm leading-relaxed"
-              style={{ color: 'rgba(255,255,255,0.62)' }}
-              animate={{ opacity: [0, 1], y: [6, 0] }}
-              transition={{ duration: 0.35, delay: 0.25 }}
-            >
-              {benefit.text}
-            </motion.p>
-          </div>
+          {/* ② Ligne accent — toujours à 24px sous l'icône, marginBottom fixe vers le titre */}
+          <motion.div
+            style={{
+              background: 'var(--accent-9)',
+              height: 2,
+              width: 40,
+              flexShrink: 0,
+              marginBottom: 14,
+            }}
+            animate={{ scaleX: [0, 1] }}
+            transition={{ duration: 0.4, delay: 0.15, ease: 'easeOut' }}
+          />
+
+          {/* ③ Titre — left-aligned, même départ pour tt les cartes */}
+          <motion.h3
+            className="font-bold text-base leading-snug text-center"
+            style={{
+              color: 'rgba(255,255,255,0.97)',
+              marginBottom: 10,
+            }}
+            animate={{ opacity: [0, 1], y: [8, 0] }}
+            transition={{ duration: 0.35, delay: 0.18 }}
+          >
+            {benefit.title}
+          </motion.h3>
+
+          {/* ④ Description — left-aligned */}
+          <motion.p
+            className="text-sm leading-relaxed text-center"
+            style={{ color: 'rgba(255,255,255,0.55)' }}
+            animate={{ opacity: [0, 1], y: [6, 0] }}
+            transition={{ duration: 0.35, delay: 0.25 }}
+          >
+            {benefit.text}
+          </motion.p>
         </motion.div>
       )}
 
-      {/* Idle placeholder — keeps grid height */}
+      {/* Idle placeholder */}
       {phase === 'idle' && (
         <div style={{ minHeight: 340, borderRadius: 16 }} />
       )}
@@ -129,9 +127,6 @@ function FlipCard({ benefit, index, isVisible }: {
   );
 }
 
-// ─────────────────────────────────────────────────────────────────
-// MAIN
-// ─────────────────────────────────────────────────────────────────
 const WhyContent: React.FC = () => {
   const data = whyData as WhyData;
   const benefits: Benefit[] = data?.benefits?.slice(0, 8) || [];
@@ -168,7 +163,6 @@ const WhyContent: React.FC = () => {
           className="pl-5 text-sm"
           style={{ color: 'rgba(255,255,255,0.35)' }}
         >
-          Les cartes se révèlent une à une…
         </motion.p>
       </div>
 

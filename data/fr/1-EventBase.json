@@ -14,6 +14,6 @@
   "EventLocationMap": "https://maps.app.goo.gl/QHgvhnAWVfNvFBs9A",
   "EventAccentColor": "#00BCE3",
   "EventPrimaryColor": "#0E2544",
-  "EventFavicon": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767776080/favicon_aagneu.ico",
+  "EventFavicon": "../public/images/favicon/favicon-512.png",
   "EventEmailImage": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767865121/save_the_date_ovmooi.png"
 }

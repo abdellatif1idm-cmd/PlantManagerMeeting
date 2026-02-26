@@ -1,164 +1,115 @@
 {
   "day1": {
     "dayDate": "06/05/2026",
-    "dayTitle": "Le Maroc, plateforme de convergence industrielle mondiale",
+    "dayTitle": "L’excellence opérationnelle au cœur de la compétitivité industrielle",
     "programme": [
       {
         "time": "09:00-10:00",
-        "title": "Accueil officiel",
+        "title": "Accueil des participants & networking d’ouverture",
         "subTitles": [
-          "Accréditations & réception des participants",
-          "Networking international (VIP & délégations étrangères)"
+          "Accréditations des décideurs industriels",
+          "Networking ciblé entre pairs"
         ],
         "activities": [
-          "Accréditations",
-          "Networking international",
-          "Visite libre de l’espace exposition"
+          "Accueil VIP des Plant Managers",
+          "Networking business orienté industrie",
+          "Visite de l’espace solutions industrielles"
         ]
       },
       {
-        "time": "10:00-11:00",
+        "time": "10:00-10:30",
         "title": "Cérémonie d’ouverture officielle",
         "subTitles": [
-          "Le Maroc, carrefour des industries mondiales"
+          "L’excellence opérationnelle comme levier de compétitivité industrielle"
         ],
         "activities": [
+          "Mot de bienvenue – Industrycom Group",
           "Allocution institutionnelle",
-          "Discours du Président d’Industry Meeting Days",
-          "Interventions des représentants des pays d’honneur (USA & Espagne)"
+          "Présentation des objectifs du Plant Manager Meeting"
         ]
       },
       {
-        "time": "11:00-12:30",
-        "title": "Panel stratégique de haut niveau",
+        "time": "10:30-11:15",
+        "title": "Keynote internationale",
         "subTitles": [
-          "Nouvelles chaînes de valeur mondiales : où se positionne le Maroc ?"
+          "Le nouveau rôle stratégique du Plant Manager à l’ère de l’Industrie 4.0"
         ],
         "activities": [
-          "Reconfiguration des supply chains mondiales",
-          "Friendshoring, nearshoring, co-production",
-          "Rôle du Maroc dans les équilibres industriels globaux",
-          "Interventions : institutions marocaines, investisseurs internationaux, industriels USA / Espagne"
-        ]
-      },
-      {
-        "time": "12:30-14:00",
-        "title": "Déjeuner officiel & networking international",
-        "subTitles": null,
-        "activities": [
-          "Déjeuner officiel",
-          "Networking B2B et institutionnel"
-        ]
-      },
-      {
-        "time": "14:00-15:30",
-        "title": "Focus Pays d’honneur – USA",
-        "subTitles": [
-          "Partenariats industriels Maroc – États-Unis"
-        ],
-        "activities": [
-          "Industrie avancée & technologies",
-          "Énergies, défense, aéronautique, digital industry",
-          "Joint-ventures & implantation industrielle"
-        ]
-      },
-      {
-        "time": "15:45-17:15",
-        "title": "Focus Pays d’honneur – Espagne",
-        "subTitles": [
-          "Le corridor industriel Maroc – Espagne – Europe"
-        ],
-        "activities": [
-          "Industrie automobile & équipements",
-          "Logistique, ports, industrie verte",
-          "PME industrielles et co-investissements"
-        ]
-      },
-      {
-        "time": "17:30-18:30",
-        "title": "B2B & rencontres ciblées",
-        "subTitles": null,
-        "activities": [
-          "Rendez-vous B2B préprogrammés",
-          "Speed meetings investisseurs / industriels",
-          "Networking institutionnel"
-        ]
-      }
-    ]
-  },
-  "day2": {
-    "dayDate": "07/05/2026",
-    "dayTitle": "Produire ensemble, investir durablement, rayonner à l’international",
-    "programme": [
-      {
-        "time": "09:30-11:00",
-        "title": "Panel Business & Investissement",
-        "subTitles": [
-          "Produire au Maroc pour les marchés mondiaux"
-        ],
-        "activities": [
-          "Avantages compétitifs du Maroc",
-          "Zones industrielles & écosystèmes",
-          "Success stories internationales (USA / Espagne / Afrique)"
+          "Transformation des usines intelligentes",
+          "Pilotage par la data industrielle",
+          "Leadership opérationnel dans un environnement incertain"
         ]
       },
       {
         "time": "11:15-12:30",
-        "title": "Panel sectoriel",
+        "title": "Panel stratégique",
         "subTitles": [
-          "Panels spécialisés selon priorités industrielles"
+          "Excellence opérationnelle : comment atteindre une performance durable ?"
         ],
         "activities": [
-          "Automobile & mobilité",
-          "Aéronautique & défense",
-          "Énergies & industrie verte",
-          "Agro-industrie & food processing",
-          "Industrie pharmaceutique & chimique"
+          "Lean manufacturing & amélioration continue",
+          "Culture de la performance terrain",
+          "Retours d’expérience de directeurs d’usines",
+          "Échanges interactifs avec l’audience"
         ]
       },
       {
         "time": "12:30-14:00",
-        "title": "Déjeuner & visite de l’espace exposition",
+        "title": "Déjeuner business & networking premium",
         "subTitles": null,
         "activities": [
-          "Déjeuner networking",
-          "Visite des stands et rencontres exposants"
+          "Déjeuner VIP",
+          "Networking décideurs ↔ décideurs",
+          "Rencontres informelles entre industriels"
         ]
       },
       {
         "time": "14:00-15:15",
-        "title": "Panel Afrique",
+        "title": "Panel thématique",
         "subTitles": [
-          "Le Maroc, porte d’entrée industrielle vers l’Afrique"
+          "Digitalisation des usines & industrie 4.0 : du concept à l’impact terrain"
         ],
         "activities": [
-          "Plateformes marocaines vers l’Afrique",
-          "Co-production & export",
-          "Financement & accompagnement des projets africains"
+          "Cas réels de transformation digitale",
+          "Data industrielle & MES",
+          "Maintenance prédictive",
+          "ROI des projets industrie 4.0"
         ]
       },
       {
-        "time": "15:30-16:45",
-        "title": "Panel Innovation & Industrie 4.0",
+        "time": "15:30-16:30",
+        "title": "Ateliers fermés / tables rondes",
         "subTitles": [
-          "Industrie mondiale : digitalisation, IA et compétitivité"
+          "Échanges opérationnels entre Plant Managers"
         ],
         "activities": [
-          "Smart factories",
-          "Data industrielle",
-          "Cybersécurité & résilience industrielle"
+          "Gestion des talents industriels",
+          "HSE & conformité internationale",
+          "Résilience des sites industriels",
+          "Partage de problématiques terrain"
         ]
       },
       {
-        "time": "17:00-18:00",
-        "title": "Session de clôture",
+        "time": "16:30-17:15",
+        "title": "Pitchs de solutions industrielles",
         "subTitles": [
-          "Déclarations, engagements & perspectives internationales"
+          "Technologies & innovations au service de la performance"
         ],
         "activities": [
-          "Synthèse stratégique",
-          "Annonces de partenariats",
-          "Perspectives pour la 9ᵉ édition"
+          "Présentations de fournisseurs sélectionnés",
+          "Solutions d’automatisation",
+          "Efficacité énergétique & décarbonation",
+          "Q&A avec les décideurs"
+        ]
+      },
+      {
+        "time": "17:15-18:30",
+        "title": "Networking cocktail de clôture",
+        "subTitles": null,
+        "activities": [
+          "Business cocktail",
+          "Rencontres B2B ciblées",
+          "Échanges informels entre pairs"
         ]
       }
     ]

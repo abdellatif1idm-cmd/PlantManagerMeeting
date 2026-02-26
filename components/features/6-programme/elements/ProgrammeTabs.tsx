@@ -1,91 +1,97 @@
 "use client";
-import { Box, Tabs } from "@radix-ui/themes";
-import  { useState } from "react";
+import { useState } from "react";
 import ProgrammeCard from "./ProgrammeCard";
-import EventProgrammeListFr from "@/data/fr/6-EventProgramme.json"
 import ProgrammeDownload from "./ProgrammeDownload";
+import EventProgrammeListFr from "@/data/fr/6-EventProgramme.json";
+
 const Programme = EventProgrammeListFr;
 
 export default function ProgrammeTabs() {
-  const [activeTab, setActiveTab] = useState("tab1");
-
-  // Detect if day2 exists
+  const [activeTab, setActiveTab] = useState<"day1" | "day2">("day1");
   const hasDay2 = Boolean(Programme.day2);
 
+  const currentDay = activeTab === "day1" ? Programme.day1 : Programme.day2;
+  if (!currentDay) return null;
+
   return (
-    <>
-    <ProgrammeDownload/>
-      {Programme.day1 && (
-        <div className="relative w-full py-2 overflow-hidden">
-          {/* Highlight Bar */}
+    <div className="flex flex-col gap-8">
+
+      {/* Day switcher + download row */}
+      <div className="flex items-center justify-between gap-4 flex-wrap">
+
+        {/* Day tabs — minimal pill style */}
+        {hasDay2 ? (
           <div
-            className={`${
-              activeTab === "tab1"
-                ? "translate-x-0"
-                : hasDay2
-                ? "translate-x-full"
-                : "translate-x-0"
-            } absolute ${
-              hasDay2 ? "w-1/2" : "w-full"
-            } duration-300 h-10 md:h-14 bg-(--accent-8) z-10 mt-2 rounded-md left-0 top-0 p-2 pointer-events-none`}
-          />
-
-          <Tabs.Root
-            defaultValue="tab1"
-            onValueChange={(value) => setActiveTab(value)}
+            className="flex rounded-full p-1 gap-1"
+            style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)' }}
           >
-            <Tabs.List className="**:bg-transparent! *:font-medium! **:text-sm! md:**:text-base! h-10 shadow-md! md:h-14! relative bg-(--gray-2)! rounded-md!">
-              <Tabs.Trigger
-                className={`${
-                  hasDay2 ? "w-1/2!" : "w-full!"
-                } h-full! programme-tab relative!`}
-                value="tab1"
-              >
-                {Programme.day1.dayDate}
-              </Tabs.Trigger>
-
-              {hasDay2 && (
-                <Tabs.Trigger className="w-1/2! h-full! programme-tab" value="tab2">
-                  {Programme.day2?.dayDate}
-                </Tabs.Trigger>
-              )}
-            </Tabs.List>
-
-            <Box
-              pt="6"
-              className="bg-linear-to-b from-transparent py-2 rounded-b-md *:duration-300  mx-auto lg:w-[95%] overflow-hidden"
+            {(["day1", "day2"] as const).map((day) => {
+              const isActive = activeTab === day;
+              const label = day === "day1" ? Programme.day1?.dayDate : Programme.day2?.dayDate;
+              return (
+                <button
+                  key={day}
+                  onClick={() => setActiveTab(day)}
+                  className="px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300"
+                  style={{
+                    background: isActive ? 'var(--accent-9)' : 'transparent',
+                    color: isActive ? '#000' : 'rgba(255,255,255,0.45)',
+                  }}
+                >
+                  {label}
+                </button>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="flex items-center gap-3">
+            <span
+              className="text-xs font-bold tracking-[0.3em] uppercase px-4 py-2 rounded-full"
+              style={{
+                background: 'color-mix(in srgb, var(--accent-9) 12%, transparent)',
+                border: '1px solid color-mix(in srgb, var(--accent-9) 30%, transparent)',
+                color: 'var(--accent-9)',
+              }}
             >
-              <Tabs.Content value="tab1" className="flex flex-col gap-y-2">
-                {Programme.day1.programme.map((prg, index) => (
-                  <ProgrammeCard
-                    key={index}
-                    time={prg.time}
-                    title={prg.title}
-                    subTitles={prg.subTitles}
-                    activities={prg.activities}
-                    index={index}
-                  />
-                ))}
-              </Tabs.Content>
+              {Programme.day1?.dayDate}
+            </span>
+          </div>
+        )}
 
-              {hasDay2 && (
-                <Tabs.Content value="tab2" className="flex flex-col gap-y-2">
-                  {Programme.day2?.programme.map((prg, index) => (
-                    <ProgrammeCard
-                      key={index}
-                      time={prg.time}
-                      title={prg.title}
-                      subTitles={prg.subTitles}
-                      activities={prg.activities}
-                      index={index}
-                    />
-                  ))}
-                </Tabs.Content>
-              )}
-            </Box>
-          </Tabs.Root>
+        <ProgrammeDownload downloadable />
+      </div>
+
+      {/* Day title */}
+      <p className="text-sm italic" style={{ color: 'rgba(255,255,255,0.3)', maxWidth: '60ch' }}>
+        {currentDay.dayTitle}
+      </p>
+
+      {/* Timeline */}
+      <div className="relative flex flex-col">
+
+        {/* Vertical timeline rail */}
+        <div
+          className="absolute top-0 bottom-0 hidden lg:block"
+          style={{
+            left: 112,
+            width: 1,
+            background: 'linear-gradient(to bottom, transparent, color-mix(in srgb, var(--accent-9) 30%, transparent) 10%, color-mix(in srgb, var(--accent-9) 30%, transparent) 90%, transparent)',
+          }}
+        />
+
+        <div className="flex flex-col gap-1">
+          {currentDay.programme.map((prg, index) => (
+            <ProgrammeCard
+              key={index}
+              time={prg.time}
+              title={prg.title}
+              subTitles={prg.subTitles ?? undefined}
+              activities={prg.activities ?? undefined}
+              index={index}
+            />
+          ))}
         </div>
-      )}
-    </>
+      </div>
+    </div>
   );
 }
