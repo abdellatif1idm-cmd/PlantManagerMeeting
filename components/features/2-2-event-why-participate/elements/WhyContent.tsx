@@ -78,11 +78,11 @@ function FlipCard({ benefit, index, isVisible }: {
           {/* Icon — SVG from JSON, rendered with accent color */}
           <motion.div
             className="flex items-center justify-center relative"
-            style={{
+           style={{
               width: 96,
               height: 96,
               color: 'var(--accent-9)',
-              boxShadow: '0 0 32px color-mix(in srgb, var(--accent-9) 20%, transparent)',
+              filter: 'drop-shadow(0 0 16px color-mix(in srgb, var(--accent-9) 60%, transparent))',
             }}
             animate={{ scale: [0.2, 1.25, 1], opacity: [0, 1, 1] }}
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}

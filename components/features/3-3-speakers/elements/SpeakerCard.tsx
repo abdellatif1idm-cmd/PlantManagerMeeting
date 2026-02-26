@@ -35,7 +35,7 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker }) => {
           {speaker.industry.map((ind: string, idx: number) => (
             <span 
               key={idx} 
-              className="text-xs px-2 py-1 bg-(--accent-9)/10 rounded-full text-emerald-900 "
+              className="text-xs px-2 py-1 bg-(--accent-9)/10 rounded-full text-emerald-950 "
             >
               {ind}
             </span>

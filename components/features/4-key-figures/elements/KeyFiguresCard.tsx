@@ -28,7 +28,7 @@ const KeyFiguresCard = ({ label, value, icon, isPlus, index }: KeyFiguresCardPro
       transition={{ duration: 0.7, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
       className="relative group flex flex-col"
     >
-      {/* Top accent bar — full width, thin */}
+      {/* Top accent bar */}
       <motion.div
         className="w-full h-px"
         style={{ background: 'color-mix(in srgb, var(--accent-9) 40%, rgba(255,255,255,0.08))' }}
@@ -38,14 +38,13 @@ const KeyFiguresCard = ({ label, value, icon, isPlus, index }: KeyFiguresCardPro
       />
 
       {/* Main body */}
-      <div
-        className="flex flex-col gap-6 pt-8 pb-6 px-2 relative overflow-hidden"
-      >
-        {/* Big number — dominates */}
+      <div className="flex flex-col gap-4 sm:gap-6 pt-6 sm:pt-8 pb-5 sm:pb-6 px-2 relative overflow-hidden">
+
+        {/* Big number */}
         <div
           className="flex items-end gap-1 leading-none font-black"
           style={{
-            fontSize: 'clamp(4rem, 8vw, 6rem)',
+            fontSize: 'clamp(2.8rem, 6vw, 6rem)',
             letterSpacing: '-0.04em',
             color: 'rgba(255,255,255,0.95)',
           }}
@@ -59,7 +58,7 @@ const KeyFiguresCard = ({ label, value, icon, isPlus, index }: KeyFiguresCardPro
           />
           {isPlus && (
             <span
-              className="mb-2 text-3xl font-black"
+              className="mb-1 sm:mb-2 text-2xl sm:text-3xl font-black"
               style={{ color: 'var(--accent-9)' }}
             >
               +
@@ -67,21 +66,21 @@ const KeyFiguresCard = ({ label, value, icon, isPlus, index }: KeyFiguresCardPro
           )}
         </div>
 
-        {/* Bottom row: icon + label */}
-        <div className="flex items-center gap-3">
+        {/* Icon + label */}
+        <div className="flex items-center gap-2 sm:gap-3">
           <div
             className="flex-none flex items-center justify-center rounded-lg"
             style={{
-              width: 36,
-              height: 36,
+              width: 32,
+              height: 32,
               background: 'color-mix(in srgb, var(--accent-9) 15%, transparent)',
               border: '1px solid color-mix(in srgb, var(--accent-9) 30%, transparent)',
             }}
           >
-            <i className={`${icon} text-base`} style={{ color: 'var(--accent-9)' }} />
+            <i className={`${icon} text-sm`} style={{ color: 'var(--accent-9)' }} />
           </div>
           <span
-            className="text-xs font-semibold tracking-widest uppercase leading-snug"
+            className="text-[10px] sm:text-xs font-semibold tracking-widest uppercase leading-snug"
             style={{ color: 'rgba(255,255,255,0.45)' }}
           >
             {label}
@@ -89,11 +88,8 @@ const KeyFiguresCard = ({ label, value, icon, isPlus, index }: KeyFiguresCardPro
         </div>
       </div>
 
-      {/* Bottom accent bar — grows on hover */}
-      <motion.div
-        className="h-px"
-        style={{ background: 'rgba(255,255,255,0.07)' }}
-      />
+      {/* Bottom line */}
+      <div className="h-px" style={{ background: 'rgba(255,255,255,0.07)' }} />
       <motion.div
         className="absolute bottom-0 left-0 h-px"
         style={{ background: 'var(--accent-9)' }}

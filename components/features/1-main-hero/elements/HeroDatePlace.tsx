@@ -1,7 +1,6 @@
 import MNBlurWrapper from "@/components/ui/motions/MNBlurWrapper";
 import { Button, Popover } from "@radix-ui/themes";
 import EventBaseListFr from "@/data/fr/1-EventBase.json";
-import DateStringText from "@/utils/DateStringText";
 import Link from "next/link";
 
 const HeroDatePlace = () => {
@@ -9,6 +8,7 @@ const HeroDatePlace = () => {
     <MNBlurWrapper initialPosition="bottom">
       <div className="w-fit flex items-center px-2 h-8 gap-x-4 rounded-full bg-(--accent-10)/10">
         <HeroDate />
+        <span className="text-(--gray-11)">|</span>
         <HeroPlace />
       </div>
     </MNBlurWrapper>
@@ -27,6 +27,7 @@ const HeroDate = () => {
     </div>
   );
 };
+
 const HeroPlace = () => {
   return (
     <div className="flex items-center gap-x-1 relative">

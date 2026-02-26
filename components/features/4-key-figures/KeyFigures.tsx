@@ -3,37 +3,27 @@ import EventKeyFiguresListFr from "@/data/fr/4-EventKeyFigures.json";
 
 const KeyFigures = () => {
   return (
-    <section className="w-full relative py-16 lg:py-24 overflow-hidden">
+    <section className="w-full relative py-12 lg:py-20 overflow-hidden">
 
-      {/* Industrial grid background */}
+      {/* Subtle grid bg */}
       <div
-        className="absolute inset-0 pointer-events-none opacity-[0.04]"
+        className="absolute inset-0 pointer-events-none opacity-[0.03]"
         style={{
-          backgroundImage: `
-            linear-gradient(rgba(255,255,255,1) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)
-          `,
+          backgroundImage: `linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)`,
           backgroundSize: '48px 48px',
         }}
       />
 
-      {/* Accent glow center */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background: 'radial-gradient(ellipse 60% 40% at 50% 50%, color-mix(in srgb, var(--accent-9) 8%, transparent) 0%, transparent 70%)',
-        }}
-      />
-
       <div className="container mx-auto px-4 lg:px-6 relative z-10">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+        {/* 2 cols on mobile, 4 on desktop */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-2 sm:gap-x-10 sm:gap-y-4">
           {EventKeyFiguresListFr.map((kf, index) => (
             <KeyFiguresCard
+              key={index}
               label={kf.Label}
               value={kf.Value}
               isPlus={kf.isPlus}
               icon={kf.Icon}
-              key={index}
               index={index}
             />
           ))}

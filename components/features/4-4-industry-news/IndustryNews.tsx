@@ -1,40 +1,60 @@
 import React from 'react';
 import NewsGrid from "./elements/NewsGrid";
-import MNBlurWrapper from "@/components/ui/motions/MNBlurWrapper";
+import { motion } from "motion/react";
 import newsData from "@/data/fr/6-6-industry-news.json";
-
-interface NewsItem {
-  id: number;
-  category: string;
-  date: string;
-  title: string;
-  content: string;
-  image: string;
-  link: string;
-}
 
 interface NewsData {
   EventNewsTitle: string;
   EventNewsDescription: string;
-  EventNewsList: NewsItem[];
 }
 
 const data = newsData as NewsData;
 
 const IndustryNews = () => {
   return (
-    <section className="w-full relative overflow-hidden py-16 lg:py-24 bg-gray-50">
-      <div className="container mx-auto px-4 lg:px-6">
-        <MNBlurWrapper initialPosition="bottom" className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold border-l-4 border-(--accent-9) pl-4 inline-block">
-            {data.EventNewsTitle}
-          </h2>
-          <p className="text-base lg:text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
-            {data.EventNewsDescription}
-          </p>
-        </MNBlurWrapper>
+    <section className="w-full relative py-16 lg:py-24" style={{ position: 'relative', zIndex: 10 }}>
+      <div className="container mx-auto px-4 lg:px-6 flex flex-col gap-10">
 
-        <NewsGrid />
+        {/* Header */}
+        <div className="flex flex-col gap-3">
+          <motion.div
+            initial={{ opacity: 0, x: -24 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            className="flex items-center gap-4"
+          >
+            <div
+              className="w-1 h-10 rounded-full flex-shrink-0"
+              style={{ background: 'var(--accent-9)' }}
+            />
+            <h2 className="text-3xl lg:text-5xl font-black leading-tight text-white">
+              {data.EventNewsTitle}
+            </h2>
+          </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+            className="pl-5 text-sm"
+            style={{ color: 'rgba(255,255,255,0.4)' }}
+          >
+            {data.EventNewsDescription}
+          </motion.p>
+        </div>
+
+        {/* News layout */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          <NewsGrid />
+        </motion.div>
+
       </div>
     </section>
   );
