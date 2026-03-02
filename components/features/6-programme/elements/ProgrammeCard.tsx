@@ -13,7 +13,7 @@ interface ProgrammeCardProps {
 export default function ProgrammeCard({ time, title, subTitles, activities, index }: ProgrammeCardProps) {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-60px" });
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const hasDetails = (subTitles?.length ?? 0) + (activities?.length ?? 0) > 0;
 
   return (

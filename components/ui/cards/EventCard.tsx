@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export type EventCardProps = {
   title: string;
@@ -15,82 +17,126 @@ export type EventCardProps = {
 };
 
 export default function EventCard({ title, edition, imageUrl, website }: EventCardProps) {
+  const [hovered, setHovered] = useState(false);
+
   return (
-    <div className="group relative w-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
+    <div
+      className="group relative w-full overflow-hidden cursor-pointer"
+      style={{ aspectRatio: '4/3' }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      {/* Full bleed image */}
+      <Image
+        src={imageUrl}
+        alt={title}
+        fill
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+        quality={85}
+        decoding="async"
+        className="object-cover pointer-events-none select-none transition-transform duration-700 ease-out"
+        style={{ transform: hovered ? 'scale(1.06)' : 'scale(1)' }}
+      />
 
-      {/* Banner */}
-      <div className="relative w-full aspect-video overflow-hidden">
-        <Image
-          src={imageUrl}
-          alt={title}
-          fill
-          sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-          quality={85}
-          decoding="async"
-          className="object-cover pointer-events-none select-none transition-transform duration-500 group-hover:scale-[1.03]"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-      </div>
+      {/* Gradient: transparent top → dark bottom */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background: 'linear-gradient(to bottom, rgba(0,0,0,0) 30%, rgba(0,0,0,0.6) 60%, rgba(0,0,0,0.92) 100%)',
+        }}
+      />
 
-      {/* Footer */}
-      <div className="flex" style={{ height: "72px" }}>
+      {/* Visit button — top right */}
+      {website.active && (
+        <Link
+          href={website.url}
+          target="_blank"
+          onClick={e => e.stopPropagation()}
+          className="absolute top-4 right-4 flex items-center gap-1 px-2.5 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase transition-all duration-200"
+          style={{
+            background: 'rgba(255,255,255,0.12)',
+            border: '1px solid rgba(255,255,255,0.25)',
+            color: 'rgba(255,255,255,0.85)',
+            backdropFilter: 'blur(8px)',
+          }}
+          onMouseEnter={e => {
+            e.currentTarget.style.background = 'var(--teal-9)';
+            e.currentTarget.style.borderColor = 'var(--teal-9)';
+            e.currentTarget.style.color = '#fff';
+          }}
+          onMouseLeave={e => {
+            e.currentTarget.style.background = 'rgba(255,255,255,0.12)';
+            e.currentTarget.style.borderColor = 'rgba(255,255,255,0.25)';
+            e.currentTarget.style.color = 'rgba(255,255,255,0.85)';
+          }}
+        >
+          Site
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M7 17L17 7M17 7H7M17 7v10"/>
+          </svg>
+        </Link>
+      )}
 
-        {/* Title */}
-        <div className="flex flex-1 items-center px-4 bg-white">
-          <h3 className="text-sm font-semibold leading-snug text-gray-900 line-clamp-2">{title}</h3>
+      {/* Bottom: title + edition side by side */}
+      <div className="absolute bottom-0 left-0 right-0 p-5 flex items-end justify-between gap-3">
+
+        {/* Title + accent line */}
+        <div
+          className="flex flex-col gap-2 flex-1 min-w-0 transition-transform duration-500 ease-out"
+          style={{ transform: hovered ? 'translateY(0)' : 'translateY(6px)' }}
+        >
+          <div
+            className="h-px"
+            style={{
+              background: 'var(--teal-9)',
+              transition: 'width 0.4s ease',
+              width: hovered ? 48 : 32,
+            }}
+          />
+          <h3
+            className="font-bold leading-snug"
+            style={{
+              fontSize: 'clamp(0.85rem, 2vw, 1rem)',
+              color: 'rgba(255,255,255,0.97)',
+              display: '-webkit-box',
+              WebkitLineClamp: 3,
+              WebkitBoxOrient: 'vertical',
+              overflow: 'hidden',
+            }}
+          >
+            {title}
+          </h3>
         </div>
 
-        {/* Edition badge - adapté aux couleurs du site */}
-        <div
-          className="flex w-1/4 flex-col items-center justify-center gap-1"
-          style={{ background: "linear-gradient(135deg, #1a2a3a 0%, #2a3f4f 50%, #1a2a3a 100%)" }}
-        >
+        {/* Edition badge — bottom right of card */}
+        <div className="flex flex-col items-center flex-none">
           <div className="flex items-start leading-none">
             <span
-              className="text-2xl font-bold leading-none"
+              className="font-black leading-none"
               style={{
-                fontFamily: "'Playfair Display', 'Didot', 'Georgia', serif",
-                background: "linear-gradient(180deg, var(--blue-11) 0%, var(--blue-9) 50%, var(--blue-11) 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
+                fontSize: 'clamp(2rem, 4vw, 2.6rem)',
+                color: 'rgba(255,255,255,0.95)',
+                letterSpacing: '-0.04em',
               }}
             >
               {edition.number}
             </span>
             <sup
-              className="text-[9px] font-light mt-1 lowercase"
-              style={{ color: "var(--blue-9)" }}
+              className="font-bold text-[9px] mt-1"
+              style={{ color: 'var(--teal-9)' }}
             >
               {edition.suffix}
             </sup>
           </div>
-          <div
-            className="w-6 my-0.5"
-            style={{ height: "0.5px", background: "linear-gradient(90deg, transparent, var(--blue-8), transparent)" }}
-          />
           <span
-            className="text-[7px] uppercase tracking-[0.3em]"
-            style={{
-              fontFamily: "'Cormorant Garamond', 'Garamond', serif",
-              color: "var(--blue-10)",
-              letterSpacing: "0.3em",
-            }}
+            className="text-[7px] font-bold tracking-[0.35em] uppercase"
+            style={{ color: 'rgba(255,255,255,0.35)' }}
           >
-            Édition
+            Éd.
           </span>
         </div>
-      </div>
 
-      {/* Visit link */}
-      {website.active && (
-        <Link
-          href={website.url}
-          target="_blank"
-          className="absolute right-2 bottom-[76px] flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-medium border border-white/60 text-white hover:bg-white hover:text-black transition-all duration-200"
-        >
-          Visiter <i className="ri-arrow-right-up-line" />
-        </Link>
-      )}
+      </div>
     </div>
   );
 }
