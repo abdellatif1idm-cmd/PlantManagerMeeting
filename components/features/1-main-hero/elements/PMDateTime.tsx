@@ -14,7 +14,7 @@ const PMDateTime = () => {
       <div className="flex items-center gap-3 text-sm lg:text-base bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
         <div className="flex items-center gap-1">
           <i className="ri-calendar-line" />
-          <span>Première semaine d'avril</span>
+          <span>27 jun 2026</span>
         </div>
         <span className="text-white/50">|</span>
         <div className="flex items-center gap-1 relative">
