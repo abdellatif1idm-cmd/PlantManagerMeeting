@@ -21,22 +21,25 @@ export default function EventCard({ title, edition, imageUrl, website }: EventCa
 
   return (
     <div
-      className="group relative w-full overflow-hidden cursor-pointer"
-      style={{ aspectRatio: '4/3' }}
+      className="group relative w-full overflow-hidden cursor-pointer aspect-[1.905] "
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      
     >
-      {/* Full bleed image */}
-      <Image
+      <div className="size-full relative">
+         <Image
         src={imageUrl}
         alt={title}
         fill
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
         quality={85}
         decoding="async"
-        className="object-cover pointer-events-none select-none transition-transform duration-700 ease-out"
+        className="object-contain pointer-events-none select-none transition-transform duration-700 ease-out"
         style={{ transform: hovered ? 'scale(1.06)' : 'scale(1)' }}
       />
+      </div>
+      {/* Full bleed image */}
+     
 
       {/* Gradient: transparent top → dark bottom */}
       <div
@@ -81,60 +84,52 @@ export default function EventCard({ title, edition, imageUrl, website }: EventCa
       <div className="absolute bottom-0 left-0 right-0 p-5 flex items-end justify-between gap-3">
 
         {/* Title + accent line */}
-        <div
-          className="flex flex-col gap-2 flex-1 min-w-0 transition-transform duration-500 ease-out"
-          style={{ transform: hovered ? 'translateY(0)' : 'translateY(6px)' }}
-        >
-          <div
-            className="h-px"
-            style={{
-              background: 'var(--teal-9)',
-              transition: 'width 0.4s ease',
-              width: hovered ? 48 : 32,
-            }}
-          />
-          <h3
-            className="font-bold leading-snug"
-            style={{
-              fontSize: 'clamp(0.85rem, 2vw, 1rem)',
-              color: 'rgba(255,255,255,0.97)',
-              display: '-webkit-box',
-              WebkitLineClamp: 3,
-              WebkitBoxOrient: 'vertical',
-              overflow: 'hidden',
-            }}
-          >
-            {title}
-          </h3>
-        </div>
+{/* Title — bottom left */}
+<div
+  className="absolute bottom-0 left-0 p-3 flex flex-col gap-2 transition-transform duration-500 ease-out"
+  style={{
+    right: '88px',
+    transform: hovered ? 'translateY(0)' : 'translateY(6px)',
+  }}
+>
+  <div className="h-px" style={{ background: 'var(--teal-9)', transition: 'width 0.4s ease', width: hovered ? 48 : 32 }} />
+  <h3 className="font-bold leading-snug" style={{ fontSize: 'clamp(0.75rem, 1.8vw, 0.9rem)', color: 'rgba(255,255,255,0.97)', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+    {title}
+  </h3>
+</div>
 
-        {/* Edition badge — bottom right of card */}
-        <div className="flex flex-col items-center flex-none">
-          <div className="flex items-start leading-none">
-            <span
-              className="font-black leading-none"
-              style={{
-                fontSize: 'clamp(2rem, 4vw, 2.6rem)',
-                color: 'rgba(255,255,255,0.95)',
-                letterSpacing: '-0.04em',
-              }}
-            >
-              {edition.number}
-            </span>
-            <sup
-              className="font-bold text-[9px] mt-1"
-              style={{ color: 'var(--teal-9)' }}
-            >
-              {edition.suffix}
-            </sup>
-          </div>
-          <span
-            className="text-[7px] font-bold tracking-[0.35em] uppercase"
-            style={{ color: 'rgba(255,255,255,0.35)' }}
-          >
-            Éd.
-          </span>
-        </div>
+
+
+        {/* Edition badge — bottom right, elegant gradient */}
+
+        
+        {/* Edition badge — flush bottom-right */}
+<div
+  className="absolute bottom-0 right-0 flex flex-col items-center justify-center"
+  style={{
+    borderTopLeftRadius: '14px',
+    background: 'linear-gradient(145deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.03) 60%, rgba(0,0,0,0.25) 100%)',
+    borderTop: '1px solid rgba(255,255,255,0.13)',
+    borderLeft: '1px solid rgba(255,255,255,0.10)',
+    backdropFilter: 'blur(18px)',
+    WebkitBackdropFilter: 'blur(18px)',
+    boxShadow: '-3px -3px 24px rgba(0,0,0,0.18), inset 1px 1px 0 rgba(255,255,255,0.07)',
+    padding: '8px 0px 5px 0px',
+    minWidth: '50px',
+  }}  
+>
+  <div className="flex items-start leading-none">
+    <span className="font-black leading-none" style={{ fontSize: 'clamp(1.5rem, 2.5vw, 2rem)', color: 'rgba(255,255,255,0.95)', letterSpacing: '-0.04em' }}>
+      {edition.number}
+    </span>
+    <sup className="font-bold mt-1" style={{ fontSize: '9px', color: 'var(--teal-9)'}}>
+      {edition.suffix}
+    </sup>
+  </div>
+  <span className="font-bold uppercase" style={{ fontSize: '7px', letterSpacing: '0.35em', color: 'rgba(255,255,255,0.30)', marginTop: '2px' }}>
+    Éd.
+  </span>
+</div>
 
       </div>
     </div>

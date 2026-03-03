@@ -32,7 +32,7 @@ export default function HomePage() {
       {/* <Benefits /> */}
       {/* <EditionsTimeline/> */}
       {/* <Gallery /> */}
-      <Speakers />
+      {/* <Speakers /> */}
       {/* <ClientSpeakerDetails /> */}
       <Sponsors />
       {/* <Calendars /> */}

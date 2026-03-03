@@ -3,7 +3,7 @@
     "Label": "Badge",
     "slug": "free",
     "href": "/participate/free",
-    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767604983/free_badge2_ugftaj.png",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1772538276/0_fuuxy7.jpg",
     "description": "Accédez gratuitement à l’événement et découvrez les conférences, ateliers et intervenants sans engagement financier.",
     "redirection": "https://industricom-group.odoo.com/event/industry-meeting-days-2026-10/register"
   },
@@ -44,7 +44,7 @@
     "Label": "Sponsoring",
     "slug": "sponsoring",
     "href": "/participate/sponsoring",
-    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1767521336/imd_sponsoring_yvnng5.png",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1772538294/unnamed_lx1l8w.png",
     "description": "Associez votre image à l’événement en tant que sponsor officiel et bénéficiez d’une visibilité renforcée avant, pendant et après l’événement."
   }
 ]

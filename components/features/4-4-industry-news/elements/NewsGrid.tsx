@@ -109,11 +109,10 @@ const NewsGrid: React.FC = () => {
 
       {/* ── RIGHT: Article list ── */}
       <div
-        className="flex flex-col divide-y"
+        className="flex flex-col divide-y divide-white/[0.06]"
         style={{
           background: '#0d0d0d',
           borderLeft: '1px solid rgba(255,255,255,0.07)',
-          divideColor: 'rgba(255,255,255,0.06)',
         }}
       >
         {sideItems.map((item, index) => (
