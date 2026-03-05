@@ -6,6 +6,8 @@ import MNBlurWrapper from "@/components/ui/motions/MNBlurWrapper";
 import DynamicExtraPlansCard from "@/components/ui/cards/DynamicExtraPlansCard";
 
 const DynamicPlan = ({ plan }: { plan: string }) => {
+    console.log(plan ,"plan from DynamicPlan")
+
   const DynamicImage =
     EventPlansList.find((pl) => pl.slug === plan)?.image || "";
   const DynamicPrice =
@@ -34,7 +36,7 @@ const DynamicPlan = ({ plan }: { plan: string }) => {
           <DynamicPlanCard image={DynamicImage} price={DynamicPrice} />
           <div className="col-span-1 lg:col-span-3 overflow-hidden">
             <MNBlurWrapper initialPosition="right">
-              <RegistrationForm type={plan} />
+              <RegistrationForm plan={plan} />
             </MNBlurWrapper>
           </div>
         </div>

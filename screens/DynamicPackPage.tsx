@@ -1,10 +1,10 @@
 import DynamicPack from "@/components/features/dynamic-pack/DynamicPack";
 import Main from "@/components/layout/Main";
 
-const DynamicPackPage = ({ pack }: { pack: string }) => {
+const DynamicPackPage = ({ type ,plan }: { type: string , plan:string }) => {
   return (
     <Main>
-      <DynamicPack pack={pack} />
+      <DynamicPack type={type}  plan={plan}/>
     </Main>
   );
 };
