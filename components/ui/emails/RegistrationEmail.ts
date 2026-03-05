@@ -50,7 +50,6 @@ const RegistrationEmail = ({
             </div>
 
             <div style="width:100%;display:flex;align-items:center;justify-content:center;margin-bottom:10px;">
-            <img style="max-width:100%;" src="${imageUrl}" alt="Banner" ></img>
             </div>
   
             <!-- Footer -->
