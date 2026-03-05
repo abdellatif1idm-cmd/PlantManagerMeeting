@@ -2,11 +2,17 @@ import { z } from "zod";
 
 
 export const SponsorSchema = z.object({
-  fullName: z
+  firstName: z
     .string()
-    .min(2, "Le nom complet doit contenir au moins 2 caractères")
-    .max(100, "Le nom complet est trop long")
-    .regex(/^[a-zA-ZÀ-ÿ\s'-]+$/, "Le nom complet contient des caractères invalides"),
+    .min(2, "Le prénom doit contenir au moins 2 caractères")
+    .max(50, "Le prénom est trop long")
+    .regex(/^[a-zA-ZÀ-ÿ\s'-]+$/, "Le prénom contient des caractères invalides"),
+
+  lastName: z
+    .string()
+    .min(2, "Le nom doit contenir au moins 2 caractères")
+    .max(50, "Le nom est trop long")
+    .regex(/^[a-zA-ZÀ-ÿ\s'-]+$/, "Le nom contient des caractères invalides"),
 
   fonction: z
     .string()

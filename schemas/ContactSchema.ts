@@ -1,16 +1,18 @@
 import { z } from "zod";
 
 export const ContactSchema = z.object({
-  fullName: z
+  firstName: z
     .string()
-    .min(2, "Le nom complet doit contenir au moins 2 caractères")
-    .max(100, "Le nom complet est trop long")
-    .regex(
-      /^[a-zA-ZÀ-ÿ\s'-]+$/,
-      "Le nom complet contient des caractères invalides"
-    ),
+    .min(2, "Le prénom doit contenir au moins 2 caractères")
+    .max(50, "Le prénom est trop long")
+    .regex(/^[a-zA-ZÀ-ÿ\s'-]+$/, "Le prénom contient des caractères invalides"),
 
-  // Zod v4: use top-level z.email() instead of z.string().email()
+  lastName: z
+    .string()
+    .min(2, "Le nom doit contenir au moins 2 caractères")
+    .max(50, "Le nom est trop long")
+    .regex(/^[a-zA-ZÀ-ÿ\s'-]+$/, "Le nom contient des caractères invalides"),
+
   email: z.email("Email invalide").max(100, "Email trop long"),
 
   contactMessage: z

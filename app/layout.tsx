@@ -74,9 +74,9 @@ export const metadata: Metadata = {
     template: `%s | ${EventBase.EventShortName}`,
   },
   description: EventBase.EventTopic,
-  icons: {
-    icon: EventBase.EventFavicon,
-  },
+  // icons: {
+  //   icon: EventBase.EventFavicon,
+  // },
 };
 
 export default function RootLayout({

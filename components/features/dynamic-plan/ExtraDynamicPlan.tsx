@@ -11,6 +11,7 @@ const ExtraDynamicPlan = ({
   plan: string;
   extraPlan: string;
 }) => {
+  console.log(plan ,"from ExtraDynamicPlan",extraPlan,"from ExtraDynamicPlan" )
   const extraDynamicPlanImage =
     EventPlansList.find((pl) => pl.slug === plan)?.["extra-plans"]?.find(
       (item) => item.slug === extraPlan
@@ -30,7 +31,7 @@ const ExtraDynamicPlan = ({
         <DynamicPlanCard image={extraDynamicPlanImage} price={extraDynamicPlanPrice} />
         <div className="col-span-1 lg:col-span-3 overflow-hidden">
           <MNBlurWrapper initialPosition="right">
-            <RegistrationForm type={extraPlan} />
+            <RegistrationForm plan={plan} type={extraPlan} />
           </MNBlurWrapper>
         </div>
       </div>

@@ -7,8 +7,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@radix-ui/themes";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import PublicEnv from "@/data/PublicEnv.json";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8080";
 
 export default function ContactForm() {
   const {
@@ -20,26 +20,29 @@ export default function ContactForm() {
 
   const onSubmit = async (data: ContactFieldsTypes) => {
     try {
-      const formData = new FormData();
-      formData.append("entry.1752827248", data.fullName);
-      formData.append("entry.1861213978", data.email);
-      formData.append("entry.508890030", data.contactMessage);
+      const response = await fetch(`${API_URL}/api/v1/submission`, {
+        method:  "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          source:    "PLANT MANAGER MEETING",
+          plan:"contact",
+          firstName: data.firstName,
+          lastName:  data.lastName,
+          email:     data.email,
+          message:   data.contactMessage,
+        }),
+      });
 
-      const response = await fetch(
-        `https://docs.google.com/forms/d/${PublicEnv.CONTACT_FORM_ID}/formResponse`,
-        {
-          method: "POST",
-          body: formData,
-          mode: "no-cors",
-        }
-      );
+      if (!response.ok) {
+        const err = await response.json();
+        throw new Error(err.message?.[0] ?? "Erreur serveur");
+      }
 
-      toast.success("Soumission réussie !");
-
+      toast.success("Votre message a été envoyé avec succès !");
       reset();
     } catch (error) {
       console.error("Form submission error:", error);
-      toast.error("Échec de la soumission");
+      toast.error(error instanceof Error ? error.message : "Échec de la soumission");
     }
   };
 
@@ -49,12 +52,18 @@ export default function ContactForm() {
         onSubmit={handleSubmit(onSubmit)}
         className="space-y-4 rounded-lg bg-linear-to-tr from-(--gray-6) to-(--gray-10)/50 p-6 flex flex-col gap-y-2"
       >
-        <div>
+        <div className="grid grid-cols-2 gap-4">
           <FormInput
-            label="Nom & prénom"
-            placeholder="Votre nom et prénom"
-            {...register("fullName")}
-            err={errors.fullName}
+            label="Prénom"
+            placeholder="Votre prénom"
+            {...register("firstName")}
+            err={errors.firstName}
+          />
+          <FormInput
+            label="Nom"
+            placeholder="Votre nom"
+            {...register("lastName")}
+            err={errors.lastName}
           />
         </div>
 
