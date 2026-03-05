@@ -14,5 +14,5 @@ export default async function DynamicPack({
   if (!(allowedTypes as readonly string[]).includes(pack)) {
     notFound();
   }
-  return <DynamicPackPage pack={pack} />;
+  return <DynamicPackPage plan={"sponsoring"} type={pack} />;
 }
